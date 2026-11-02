@@ -1078,6 +1078,7 @@ document.querySelectorAll(".copy-btn").forEach(function(btn){btn.addEventListene
 
 /* ---------- init language ---------- */
 var start="en"; try{start=localStorage.getItem("ki-lang")||"en";}catch(e){}
+try{var q=new URLSearchParams(location.search).get("lang"); if(q && I18N[q]) start=q;}catch(e){}
 applyLang(start);
 })();
 </script>
