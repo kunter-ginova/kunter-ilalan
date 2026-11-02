@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Kunter Ilalan: founding director of GiNOVA. Signal-based nutrition, BIOMIKS, Alimentarus Systems, Nutradina and Xooform.">
+<link rel="icon" href="media/ginova-emblem.png">
+<title>Kunter Ilalan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an Italian white gallery. Full-width bands with a centred 76rem inner column; huge Bodoni display, Caslon prose and New Yorker-style italic captions; ink drawings as marginalia. Single light theme by design. */
+:root{
+  --paper:#FFFFFF;
+  --wash:#F5F6F8;
+  --ink:#0B1A33;
+  --ink-soft:#4A5670;
+  --hair:#E3E6EC;
+  --pen:#15171C;
+  --teal:#0E9FAB;
+  --gold:#E3A008;
+  --lapis:#1D3C8C;
+  --display:"Bodoni Moda", "Bodoni 72", Didot, Georgia, serif;
+  --text:"Libre Caslon Text", Baskerville, Georgia, serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --s-1:.82rem; --s0:1.06rem; --s1:1.3rem; --s2:clamp(1.6rem,2.6vw,2.1rem); --s3:clamp(2.5rem,5.6vw,4.8rem); --s4:clamp(3.6rem,12.5vw,11.5rem);
+  color-scheme:light;
+}
+html[lang="ar"]{--display:"Amiri", "Noto Naskh Arabic", "Geeza Pro", serif; --text:"IBM Plex Sans Arabic", "Noto Sans Arabic", Tahoma, sans-serif; --mono:"IBM Plex Sans Arabic", Tahoma, sans-serif}
+html[lang="ja"]{--display:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif; --text:"Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--paper); color:var(--ink); font-family:var(--text); font-size:var(--s0); line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+img,video{max-width:100%; display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{margin:0; font-family:var(--display); font-weight:500; text-wrap:balance; line-height:1.02; letter-spacing:-.015em}
+:focus-visible{outline:2px solid var(--teal); outline-offset:3px}
+.inner{max-width:76rem; margin-inline:auto; padding-left:max(20px, env(safe-area-inset-left, 0px)); padding-right:max(20px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-family:var(--mono); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-soft); display:flex; align-items:center; gap:.7rem}
+.eyebrow::before{content:""; width:2.2rem; height:1px; background:currentColor}
+html[lang="ar"] .eyebrow, html[lang="ja"] .eyebrow{letter-spacing:.02em; font-size:.8rem}
+em{font-style:italic}
+.caption{font-family:var(--text); font-style:italic; font-size:1.02rem; text-align:center; color:var(--pen); max-width:34ch; margin-inline:auto; line-height:1.45}
+html[lang="ja"] .caption{font-style:normal}
+
+/* progress + nav */
+.progress{position:fixed; inset:0 0 auto; height:2px; z-index:60; background:linear-gradient(90deg,var(--teal),var(--gold)); transform-origin:0 50%; transform:scaleX(0); top:env(safe-area-inset-top,0px)}
+html[dir="rtl"] .progress{transform-origin:100% 50%}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:55; background:rgba(255,255,255,.9)}
+.nav{position:sticky; top:env(safe-area-inset-top,0px); z-index:50; background:rgba(255,255,255,.82); backdrop-filter:saturate(1.4) blur(14px); -webkit-backdrop-filter:saturate(1.4) blur(14px); border-bottom:1px solid transparent; transition:border-color .3s}
+.nav.scrolled{border-bottom-color:var(--hair)}
+.nav .inner{display:flex; align-items:center; justify-content:space-between; gap:1rem; height:4.2rem}
+.mark{display:flex; align-items:center; gap:.65rem; text-decoration:none; font-family:var(--display); font-size:1.15rem; font-weight:600; white-space:nowrap}
+.mark img{width:2rem; height:auto}
+.mark i{font-weight:400}
+.links{display:flex; gap:1.4rem; font-family:var(--mono); font-size:.74rem; letter-spacing:.08em; text-transform:uppercase}
+html[lang="ar"] .links, html[lang="ja"] .links{letter-spacing:0; font-size:.85rem; text-transform:none}
+.links a{text-decoration:none; color:var(--ink-soft); position:relative; padding-block:.3rem}
+.links a::after{content:""; position:absolute; inset:auto 0 0; height:1px; background:var(--ink); transform:scaleX(0); transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.links a:hover{color:var(--ink)}
+.links a:hover::after{transform:scaleX(1)}
+.lang{position:relative; display:flex; align-items:center}
+.lang select{appearance:none; -webkit-appearance:none; font-family:var(--mono); font-size:.8rem; color:var(--ink); background:var(--paper); border:1px solid var(--ink); border-radius:999px; padding:.42rem 2rem .42rem .95rem; cursor:pointer}
+html[dir="rtl"] .lang select{padding:.42rem .95rem .42rem 2rem}
+.lang::after{content:""; position:absolute; inset-inline-end:.85rem; width:.42rem; height:.42rem; border-right:1.5px solid var(--ink); border-bottom:1.5px solid var(--ink); transform:translateY(-25%) rotate(45deg); pointer-events:none}
+@media (max-width:1020px){.links{display:none}}
+
+/* hero */
+.hero{position:relative; overflow:hidden}
+.hero canvas{position:absolute; inset:0; width:100%; height:100%; pointer-events:none}
+.hero .inner{position:relative; display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr); gap:3rem; align-items:end; padding-block:4.5rem 3.5rem}
+.name{font-size:var(--s4); font-weight:500; line-height:.86; letter-spacing:-.04em; margin-block:1.4rem 0}
+.name .w{display:block; white-space:nowrap}
+.name .w2{font-style:italic; font-weight:400; padding-inline-start:.35em; position:relative; width:max-content}
+.name .ch{display:inline-block; animation:rise 1.1s cubic-bezier(.16,.84,.24,1) both; animation-delay:calc(var(--i) * 55ms + 150ms)}
+@keyframes rise{from{transform:translateY(.55em) rotate(4deg); opacity:0} to{transform:none; opacity:1}}
+.star{position:absolute; top:-.05em; inset-inline-end:-.42em; width:.32em; color:var(--gold); animation:twinkle 4.5s ease-in-out infinite}
+@keyframes twinkle{0%,100%{transform:scale(1) rotate(0)} 50%{transform:scale(.8) rotate(45deg)}}
+.swash{display:block; width:min(100%,34rem); height:auto; margin-top:.3rem; overflow:visible}
+.native{font-family:var(--display); font-size:var(--s2); color:var(--ink-soft); margin-top:.6rem}
+.native:empty{display:none}
+.lede{font-size:clamp(1.15rem,1.7vw,1.42rem); line-height:1.55; max-width:36ch; margin-top:1.6rem; color:var(--ink)}
+.lede em{font-family:var(--display); font-size:1.18em; font-style:italic}
+.ctas{display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2rem}
+.btn{display:inline-flex; align-items:center; gap:.6rem; font-family:var(--mono); font-size:.8rem; letter-spacing:.06em; text-decoration:none; padding:.85rem 1.4rem; border-radius:999px; border:1px solid var(--ink); transition:background-color .25s, color .25s, transform .25s}
+.btn.solid{background:var(--ink); color:var(--paper)}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid:hover{background:var(--lapis); border-color:var(--lapis)}
+.btn.line:hover{background:var(--ink); color:var(--paper)}
+.sketch{position:relative; justify-self:end; width:100%; max-width:26rem}
+.sketch .frame{position:relative; transform:rotate(-2.2deg); transition:transform .6s cubic-bezier(.2,.7,.2,1); will-change:transform}
+.sketch img{width:100%; aspect-ratio:2/3; object-fit:cover; background:var(--wash)}
+.sketch .border{position:absolute; inset:-10px; width:calc(100% + 20px); height:calc(100% + 20px); pointer-events:none; overflow:visible}
+.sketch .cup{position:absolute; width:7.5rem; inset-inline-start:-3.6rem; bottom:3.5rem; overflow:visible}
+.sketch .caption{margin-top:1.4rem}
+
+/* marquee */
+.marquee{border-block:1px solid var(--ink); overflow:hidden; background:var(--paper)}
+.track{display:flex; width:max-content; animation:slide 38s linear infinite}
+.track span{font-family:var(--display); font-style:italic; font-size:clamp(1.6rem,3.4vw,2.8rem); white-space:nowrap; padding-block:.9rem; display:flex; align-items:center; gap:2.2rem; padding-inline-end:2.2rem}
+.track svg{width:.7em; color:var(--gold); flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none} .name .ch{animation:none} .star{animation:none}}
+
+/* sections */
+.band{padding-block:clamp(4.5rem,9vw,8rem)}
+.band.wash{background:var(--wash)}
+.head{display:grid; gap:1.2rem; margin-bottom:clamp(2.5rem,5vw,4rem); max-width:58rem}
+.head h2{font-size:var(--s3)}
+.head h2 em{font-weight:400}
+.head p{font-size:var(--s1); color:var(--ink-soft); max-width:46ch}
+.rv{transition:transform 1.1s cubic-bezier(.16,.84,.24,1)}
+html.js .rv:not(.in){transform:translateY(34px)}
+@media (prefers-reduced-motion:reduce){html.js .rv:not(.in){transform:none}}
+
+/* founder */
+.founder{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(2rem,5vw,5rem); align-items:start}
+.portrait{position:relative}
+.portrait img{width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 22%; filter:grayscale(1) contrast(1.06)}
+.portrait .border{position:absolute; inset:-12px; width:calc(100% + 24px); height:calc(100% + 24px); pointer-events:none; overflow:visible}
+.founder .text{display:grid; gap:1.6rem}
+.founder h2{font-size:var(--s3)}
+.founder .text > p{font-size:var(--s1); line-height:1.6; max-width:40ch}
+.label{border:2px solid var(--pen); padding:1rem 1.15rem; font-family:var(--mono); font-size:.8rem; max-width:26rem; background:var(--paper)}
+.label h3{font-family:var(--display); font-size:1.7rem; font-weight:700; border-bottom:9px solid var(--pen); padding-bottom:.3rem; margin-bottom:.35rem}
+.label .row{display:flex; justify-content:space-between; gap:1rem; padding-block:.32rem; border-bottom:1px solid var(--hair); font-variant-numeric:tabular-nums}
+.label .row.thick{border-bottom:4px solid var(--pen)}
+.label .note{margin-top:.6rem; font-size:.7rem; color:var(--ink-soft); line-height:1.5}
+
+/* studio */
+.studio-top{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(2rem,5vw,5rem); align-items:center}
+.logo-big{width:min(100%,26rem); height:auto}
+.studio-top .copy{display:grid; gap:1.4rem}
+.studio-top .copy h2{font-size:var(--s3)}
+.studio-top .copy p{font-size:var(--s1); color:var(--ink-soft); max-width:40ch}
+.arch{position:relative}
+.arch img{width:100%; aspect-ratio:1/1.05; object-fit:cover; border-radius:50% 50% 0 0 / 34% 34% 0 0}
+.arch .caption{margin-top:1.2rem}
+.divisions{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:clamp(3rem,6vw,5rem); border-top:1px solid var(--ink)}
+.division{padding:1.8rem 1.6rem 1.8rem 0; display:grid; gap:.7rem; align-content:start}
+.division + .division{padding-inline-start:1.6rem; border-inline-start:1px solid var(--hair)}
+.division h3{font-size:var(--s2)}
+.division p{color:var(--ink-soft)}
+.division .entry{font-family:var(--mono); font-size:.74rem; color:var(--teal)}
+.panorama{margin-top:clamp(3rem,6vw,5rem); overflow:hidden; aspect-ratio:3/1.15; background:var(--wash)}
+.panorama img{width:100%; height:100%; object-fit:cover; transform:scale(1.08); animation:drift 30s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.16) translateX(-2%)}}
+@media (prefers-reduced-motion:reduce){.panorama img{animation:none}}
+
+/* research */
+.research-intro{display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(2rem,5vw,5rem); align-items:start}
+.research-intro .prose{display:grid; gap:1.2rem; font-size:var(--s1); line-height:1.6}
+.research-intro .prose p:last-child{font-family:var(--display); font-style:italic; font-size:clamp(1.5rem,2.4vw,2rem); line-height:1.3; color:var(--lapis)}
+.fork{width:100%; max-width:24rem; overflow:visible; margin-inline:auto}
+.chips{display:flex; flex-wrap:wrap; gap:.55rem; margin-top:2.2rem}
+.chips span{font-family:var(--mono); font-size:.76rem; border:1px solid var(--ink); border-radius:999px; padding:.3rem .8rem; transition:background-color .2s,color .2s}
+.chips span:hover{background:var(--ink); color:var(--paper)}
+
+.lab{margin-top:clamp(3rem,6vw,5rem); display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:2rem; border:1px solid var(--ink); padding:clamp(1.2rem,3vw,2.2rem); background:var(--paper)}
+.lab-plot{min-width:0}
+.lab canvas{width:100%; height:clamp(240px,32vw,360px); display:block}
+.lab-side{display:grid; gap:1.1rem; align-content:start}
+.lab-side h3{font-size:var(--s2)}
+.lab-side > p{color:var(--ink-soft); font-size:.98rem}
+.ctl{display:grid; gap:.3rem}
+.ctl label{display:flex; justify-content:space-between; font-family:var(--mono); font-size:.74rem; color:var(--ink-soft)}
+.ctl output{color:var(--ink); font-variant-numeric:tabular-nums}
+input[type=range]{width:100%; accent-color:var(--ink)}
+.seg{display:inline-flex; border:1px solid var(--ink); border-radius:999px; padding:3px; gap:3px}
+.seg button{font-family:var(--mono); font-size:.76rem; border:0; background:transparent; color:var(--ink); padding:.42rem .9rem; border-radius:999px; cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink); color:var(--paper)}
+.readouts{display:grid; grid-template-columns:1fr 1fr; gap:.2rem 1rem; border-top:1px solid var(--hair); padding-top:.9rem}
+.readouts div{display:grid}
+.readouts dt{font-family:var(--mono); font-size:.68rem; color:var(--ink-soft)}
+.readouts dd{margin:0; font-family:var(--display); font-size:1.5rem; font-variant-numeric:tabular-nums}
+.readouts dd.yes{color:var(--teal)} .readouts dd.no{color:#B4231F}
+.lab .fine{grid-column:1 / -1}
+.fine{font-family:var(--mono); font-size:.7rem; color:var(--ink-soft)}
+.lab .caption{grid-column:1 / -1; margin-top:.4rem}
+
+.papers{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:clamp(3rem,6vw,5rem); border-top:1px solid var(--ink)}
+.paper{padding:1.8rem 1.6rem 1.8rem 0; display:grid; gap:.75rem; align-content:start}
+.paper + .paper{padding-inline-start:1.6rem; border-inline-start:1px solid var(--hair)}
+.paper h3{font-size:clamp(1.35rem,2vw,1.7rem)}
+.paper p{color:var(--ink-soft); font-size:.98rem}
+.paper .status{font-family:var(--mono); font-size:.72rem; color:var(--lapis)}
+
+.longevity{position:relative; color:#FFFFFF; background:var(--lapis); overflow:hidden; margin-top:clamp(3rem,6vw,5rem)}
+.longevity img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:80% 50%}
+.longevity::after{content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(14,30,80,.94) 0%, rgba(14,30,80,.7) 45%, rgba(14,30,80,0) 80%)}
+html[dir="rtl"] .longevity::after{background:linear-gradient(270deg, rgba(14,30,80,.94) 0%, rgba(14,30,80,.7) 45%, rgba(14,30,80,0) 80%)}
+html[dir="rtl"] .longevity img{transform:scaleX(-1)}
+.longevity .content{position:relative; z-index:1; padding:clamp(2.5rem,6vw,5rem) clamp(1.4rem,4vw,3.5rem); display:grid; gap:1.2rem; max-width:40rem}
+.longevity .eyebrow{color:#C9D6FF}
+.longevity h3{font-size:clamp(2rem,4.2vw,3.4rem); font-style:italic; font-weight:400}
+.longevity p{font-size:1.08rem; line-height:1.65; color:#E8EDFF}
+.longevity .status{font-family:var(--mono); font-size:.72rem; color:var(--gold)}
+
+.book{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(2rem,5vw,4rem); align-items:center; margin-top:clamp(3rem,6vw,5rem)}
+.book img{width:100%; aspect-ratio:3/2; object-fit:cover}
+.book .copy{display:grid; gap:1rem}
+.book h3{font-size:var(--s3); font-style:italic; font-weight:400}
+.book .sub{font-family:var(--display); font-size:1.25rem; color:var(--lapis)}
+
+/* brands */
+.house{display:grid; justify-items:center; text-align:center}
+.node{display:grid; gap:.7rem; justify-items:center; max-width:44rem}
+.node h3{font-size:clamp(2.2rem,5vw,4rem); font-weight:600; letter-spacing:.02em}
+.node p{color:var(--ink-soft); max-width:52ch}
+.node .sub{font-family:var(--display); font-style:italic; color:var(--ink)}
+.pills{display:flex; flex-wrap:wrap; gap:.45rem; justify-content:center}
+.pills span{font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; border:1px solid var(--ink); padding:.25rem .7rem; border-radius:999px}
+.stem{width:2px; height:4rem; background:var(--pen); margin-block:1.4rem}
+.crest{width:min(100%,22rem); height:auto}
+.split{width:min(100%,46rem); height:3.5rem; overflow:visible; margin-block:1rem .4rem}
+.branches{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); width:100%; text-align:start}
+.branch{display:grid; gap:1rem; align-content:start}
+.branch figure{margin:0; display:grid; gap:1rem; position:relative}
+.branch img{width:100%; aspect-ratio:4/5; object-fit:cover; background:var(--wash)}
+.branch .bottle{object-fit:contain; background:#FFFFFF; animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px)}}
+@media (prefers-reduced-motion:reduce){.branch .bottle{animation:none}}
+.branch h4{font-size:clamp(2rem,3.6vw,2.9rem); font-weight:600}
+.branch .eyebrow{color:var(--teal)}
+.branch p{color:var(--ink-soft)}
+.gallery{display:flex; gap:1.2rem; overflow-x:auto; scroll-snap-type:x mandatory; padding-block:2.5rem 1rem; margin-top:2.5rem; border-top:1px solid var(--hair); scrollbar-width:thin}
+.gallery figure{margin:0; flex:0 0 clamp(13rem,22vw,17rem); scroll-snap-align:start; display:grid; gap:.6rem}
+.gallery img{width:100%; aspect-ratio:2/3; object-fit:cover; transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover img{transform:scale(1.03)}
+.gallery figcaption{font-family:var(--mono); font-size:.72rem; color:var(--ink-soft)}
+
+/* films */
+.films{display:grid; gap:1.4rem}
+.screen{position:relative; background:#000; aspect-ratio:16/9}
+.screen video{width:100%; height:100%; object-fit:cover}
+.screen::after{content:""; position:absolute; inset:-14px; border:1.5px solid var(--pen); pointer-events:none; transform:rotate(-.4deg)}
+.thumbs{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin-top:1rem}
+.thumb{all:unset; cursor:pointer; display:grid; gap:.55rem}
+.thumb img{width:100%; aspect-ratio:16/9; object-fit:cover; filter:grayscale(.85); transition:filter .4s, transform .4s}
+.thumb:hover img, .thumb[aria-current="true"] img{filter:none}
+.thumb[aria-current="true"] span{color:var(--ink); border-color:var(--gold)}
+.thumb span{font-family:var(--mono); font-size:.74rem; color:var(--ink-soft); border-top:2px solid transparent; padding-top:.45rem}
+.thumb:focus-visible{outline:2px solid var(--teal); outline-offset:4px}
+
+/* sound */
+.records{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(2rem,5vw,5rem); align-items:center}
+.deck{position:relative; aspect-ratio:1/1; max-width:30rem; width:100%}
+.sleeve{position:absolute; inset:0 18% 0 0; z-index:2; box-shadow:0 30px 60px -30px rgba(11,26,51,.45)}
+.sleeve img{width:100%; height:100%; object-fit:cover}
+.vinyl{position:absolute; inset:4% 0 4% 22%; border-radius:50%; background:repeating-radial-gradient(circle at 50% 50%, #111 0 2px, #1d1d1d 2px 3px); transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.vinyl::after{content:""; position:absolute; inset:34%; border-radius:50%; background:var(--gold) url("media/ginova-emblem.png") center/62% no-repeat; box-shadow:0 0 0 6px #222}
+.deck.playing .vinyl{transform:translateX(14%); animation:spin 2.2s linear infinite}
+@keyframes spin{from{rotate:0deg} to{rotate:360deg}}
+@media (prefers-reduced-motion:reduce){.deck.playing .vinyl{animation:none}}
+.coupe{position:absolute; width:5.5rem; bottom:-1.5rem; inset-inline-start:-2rem; z-index:3; overflow:visible}
+.player{display:grid; gap:1.4rem}
+.tracks{list-style:none; margin:0; padding:0; border-top:1px solid var(--ink)}
+.tracks li{border-bottom:1px solid var(--hair)}
+.tracks button{all:unset; box-sizing:border-box; width:100%; cursor:pointer; display:grid; grid-template-columns:2.2rem minmax(0,1fr) auto; align-items:center; gap:1rem; padding:1rem .2rem}
+.tracks button:focus-visible{outline:2px solid var(--teal)}
+.tracks .ico{width:2.2rem; height:2.2rem; border-radius:50%; border:1px solid var(--ink); display:grid; place-items:center}
+.tracks .ico svg{width:.8rem; height:.8rem}
+.tracks .t{font-family:var(--display); font-size:1.5rem; font-style:italic}
+.tracks .d{font-family:var(--mono); font-size:.74rem; color:var(--ink-soft); font-variant-numeric:tabular-nums}
+.tracks li.on .ico{background:var(--ink); color:var(--paper)}
+.scrub{display:grid; grid-template-columns:auto minmax(0,1fr) auto; gap:.8rem; align-items:center; font-family:var(--mono); font-size:.72rem; color:var(--ink-soft); font-variant-numeric:tabular-nums}
+.viz{width:100%; height:72px; display:block}
+
+/* writing */
+.essays{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem clamp(2rem,5vw,4rem)}
+.group h3{font-family:var(--display); font-style:italic; font-size:var(--s2); font-weight:400; margin-bottom:.6rem; color:var(--lapis)}
+.essay{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.15rem 1rem; padding-block:.9rem; border-bottom:1px solid var(--hair); text-decoration:none; position:relative}
+.essay::after{content:""; position:absolute; inset:auto 0 -1px 0; height:1px; background:var(--gold); transform:scaleX(0); transform-origin:0 50%; transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+html[dir="rtl"] .essay::after{transform-origin:100% 50%}
+.essay:hover::after{transform:scaleX(1)}
+.essay .t{font-family:var(--display); font-size:1.28rem; font-weight:500}
+.essay .m{font-family:var(--mono); font-size:.7rem; color:var(--ink-soft); white-space:nowrap; font-variant-numeric:tabular-nums}
+.essay .d{grid-column:1 / -1; font-size:.92rem; color:var(--ink-soft)}
+.essay .lg{font-family:var(--mono); font-size:.62rem; border:1px solid var(--hair); padding:0 .3rem; margin-inline-start:.4rem; vertical-align:middle}
+
+/* press */
+.tabs{display:inline-flex; border:1px solid var(--ink); border-radius:999px; padding:3px; gap:3px; margin-bottom:1.8rem}
+.tabs button{font-family:var(--mono); font-size:.8rem; border:0; background:transparent; color:var(--ink); padding:.45rem 1.1rem; border-radius:999px; cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink); color:var(--paper)}
+.bios{display:grid; gap:1.2rem}
+.bio{border-top:1px solid var(--ink); padding-top:1.2rem; display:grid; grid-template-columns:10rem minmax(0,1fr); gap:1rem 2rem}
+.bio .k{display:grid; gap:.8rem; align-content:start}
+.bio .k span{font-family:var(--display); font-style:italic; font-size:1.35rem}
+.bio .v{display:grid; gap:.8rem; max-width:68ch}
+.copy-btn{justify-self:start; font-family:var(--mono); font-size:.72rem; background:transparent; color:var(--ink); border:1px solid var(--ink); border-radius:999px; padding:.3rem .8rem; cursor:pointer}
+.copy-btn:hover{background:var(--ink); color:var(--paper)}
+
+/* footer */
+footer{border-top:1px solid var(--ink); padding-block:4rem 3rem}
+footer .inner{display:grid; gap:2.5rem}
+.ordo{font-family:var(--display); font-style:italic; font-weight:400; font-size:clamp(3.5rem,11vw,9rem); line-height:.9; letter-spacing:-.03em}
+.foot{display:flex; flex-wrap:wrap; justify-content:space-between; gap:1.5rem; align-items:center; font-family:var(--mono); font-size:.76rem; color:var(--ink-soft)}
+.foot .brand{display:flex; align-items:center; gap:.8rem}
+.foot img{width:2.6rem; height:auto}
+.foot a{color:var(--ink)}
+
+/* ink drawing system */
+.ink path, .ink ellipse, .ink circle, .ink line, .ink rect{fill:none; stroke:var(--pen); stroke-linecap:round; stroke-linejoin:round}
+.ink .fillw{fill:#FFFFFF}
+.ink .gold{stroke:var(--gold)}
+html.js .ink.draw path, html.js .ink.draw ellipse, html.js .ink.draw circle, html.js .ink.draw line, html.js .ink.draw rect{stroke-dasharray:var(--len); stroke-dashoffset:var(--len); transition:stroke-dashoffset 1.6s cubic-bezier(.45,.05,.25,1) var(--d,0s)}
+html.js .ink.draw.in path, html.js .ink.draw.in ellipse, html.js .ink.draw.in circle, html.js .ink.draw.in line, html.js .ink.draw.in rect{stroke-dashoffset:0}
+@media (prefers-reduced-motion:reduce){html.js .ink.draw path, html.js .ink.draw ellipse, html.js .ink.draw circle, html.js .ink.draw line, html.js .ink.draw rect{stroke-dasharray:none; stroke-dashoffset:0; transition:none}}
+
+@media (max-width:900px){
+  .hero .inner, .founder, .studio-top, .research-intro, .lab, .records, .book{grid-template-columns:1fr}
+  .sketch{justify-self:center; max-width:22rem; margin-top:1rem}
+  .sketch .cup{width:5.5rem; inset-inline-start:-1.6rem}
+  .divisions, .papers, .thumbs, .essays{grid-template-columns:1fr}
+  .division, .paper{padding-inline:0 !important; border-inline-start:0 !important; border-bottom:1px solid var(--hair)}
+  .branches{grid-template-columns:1fr}
+  .bio{grid-template-columns:1fr}
+  .panorama{aspect-ratio:4/3}
+  .deck{max-width:22rem; margin-inline:auto}
+  .coupe{inset-inline-start:-.5rem}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="inkf" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/>
+    </filter>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0 C13 8 16 11 24 12 C16 13 13 16 12 24 C11 16 8 13 0 12 C8 11 11 8 12 0 Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="inner">
+    <a class="mark" href="#top"><img src="media/ginova-emblem.png" alt="">Kunter <i>Ilalan</i></a>
+    <div class="links">
+      <a href="#founder" data-i18n="nav_founder">Founder</a>
+      <a href="#studio" data-i18n="nav_studio">Studio</a>
+      <a href="#research" data-i18n="nav_research">Research</a>
+      <a href="#brands" data-i18n="nav_brands">Brands</a>
+      <a href="#films" data-i18n="nav_films">Films</a>
+      <a href="#sound" data-i18n="nav_sound">Sound</a>
+      <a href="#writing" data-i18n="nav_writing">Writing</a>
+      <a href="#press" data-i18n="nav_press">Press</a>
+    </div>
+    <label class="lang">
+      <span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Language</span>
+      <select id="lang" aria-label="Language">
+        <option value="en">English</option>
+        <option value="tr">Türkçe</option>
+        <option value="it">Italiano</option>
+        <option value="de">Deutsch</option>
+        <option value="ar">العربية</option>
+        <option value="ja">日本語</option>
+      </select>
+    </label>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="waves" aria-hidden="true"></canvas>
+  <div class="inner">
+    <div>
+      <p class="eyebrow" data-i18n="hero_eyebrow">Founding Director · GiNOVA</p>
+      <h1 class="name" aria-label="Kunter Ilalan">
+        <span class="w" aria-hidden="true">Kunter</span>
+        <span class="w w2" aria-hidden="true">Ilalan<svg class="star" viewBox="0 0 24 24"><use href="#spark"/></svg></span>
+      </h1>
+      <svg class="swash ink draw" viewBox="0 0 520 34" aria-hidden="true"><g filter="url(#inkf)"><path d="M8 22 C 120 6, 260 30, 512 10" stroke-width="5"/><path d="M60 29 C 180 21, 320 31, 470 22" stroke-width="1.6" style="--d:.5s"/></g></svg>
+      <p class="native" id="native"></p>
+      <p class="lede" data-i18n="hero_lede">Fifteen years in the food industry, fifteen in information technology. I work where food science, machine intelligence and strategy meet. My thesis is short: <em>food is code</em>.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#research" data-i18n="cta_research">Explore the research</a>
+        <a class="btn line" href="#films" data-i18n="cta_films">Watch the films</a>
+      </div>
+    </div>
+    <figure class="sketch" style="margin:0">
+      <div class="frame" id="frame">
+        <img src="media/founder-sketch.webp" alt="Pen-and-ink portrait of Kunter Ilalan with an espresso, an open notebook and the skylines of Istanbul, Rome and Naples">
+        <svg class="border ink draw" viewBox="0 0 100 150" preserveAspectRatio="none" aria-hidden="true"><g filter="url(#inkf)"><path d="M2 3 L97 1.5 L98.5 147 L1.5 148.5 Z" stroke-width="1.4" vector-effect="non-scaling-stroke"/></g></svg>
+      </div>
+      <svg class="cup ink draw" viewBox="0 0 120 120" aria-hidden="true"><g filter="url(#inkf)">
+        <path class="fillw" d="M28 58 L34 92 Q36 100 46 100 L74 100 Q84 100 86 92 L92 58 Z" stroke-width="3"/>
+        <ellipse class="fillw" cx="60" cy="58" rx="32" ry="6" stroke-width="2.4"/>
+        <path d="M91 66 C108 63 109 88 87 85" stroke-width="3"/>
+        <path d="M10 104 Q60 118 110 104" stroke-width="3"/>
+        <path d="M22 104 Q60 97 98 104" stroke-width="1.6"/>
+        <path d="M50 48 C40 36 62 30 52 16" stroke-width="1.8" style="--d:.6s"/>
+        <path d="M67 46 C58 34 79 28 70 12" stroke-width="1.8" style="--d:.8s"/>
+      </g></svg>
+      <figcaption class="caption" data-i18n="cap_founder">“A lungo, please. And hold the calories, I’m counting signals.”</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track" dir="ltr">
+    <span><b data-i18n="mq_code" style="font-weight:400">Food is code</b><svg><use href="#spark"/></svg>Ordo cibi<svg><use href="#spark"/></svg><b data-i18n="mq_signal" style="font-weight:400">Signal, not substrate</b><svg><use href="#spark"/></svg>Mensura · Structura · Regimen<svg><use href="#spark"/></svg></span>
+    <span><b data-i18n="mq_code" style="font-weight:400">Food is code</b><svg><use href="#spark"/></svg>Ordo cibi<svg><use href="#spark"/></svg><b data-i18n="mq_signal" style="font-weight:400">Signal, not substrate</b><svg><use href="#spark"/></svg>Mensura · Structura · Regimen<svg><use href="#spark"/></svg></span>
+  </div>
+</div>
+
+<main>
+<section class="band" id="founder">
+  <div class="inner founder">
+    <div class="portrait rv">
+      <img src="media/portrait.jpg" alt="Black-and-white portrait of Kunter Ilalan in sunglasses">
+      <svg class="border ink draw" viewBox="0 0 100 125" preserveAspectRatio="none" aria-hidden="true"><g filter="url(#inkf)"><path d="M1.5 2 L98 3 L97 123 L2.5 122 Z" stroke-width="1.4" vector-effect="non-scaling-stroke"/></g></svg>
+    </div>
+    <div class="text rv">
+      <p class="eyebrow" data-i18n="f_eyebrow">The founder</p>
+      <h2 data-i18n="f_title">An engineer who reads food like code.</h2>
+      <p data-i18n="f_body">Trained as a food engineer at METU, Kunter spent fifteen years inside the food industry and fifteen more in information technology. Born in İzmir, at home in Ankara, recently a year in Naples. He founded GiNOVA to give hard decisions the rigour of engineering and the speed of generative AI.</p>
+      <aside class="label" aria-label="Composition">
+        <h3 data-i18n="comp_title">Composition</h3>
+        <div class="row thick"><span data-i18n="comp_serving">Serving size</span><span data-i18n="comp_serving_v">1 founder</span></div>
+        <div class="row"><span data-i18n="comp_food">Food industry</span><span data-i18n="comp_years">15 yrs</span></div>
+        <div class="row"><span data-i18n="comp_it">Information technology</span><span data-i18n="comp_years">15 yrs</span></div>
+        <div class="row"><span data-i18n="comp_degree">BSc Food Engineering</span><span data-i18n="comp_degree_v">METU</span></div>
+        <div class="row"><span data-i18n="comp_origin">Origin</span><span data-i18n="comp_origin_v">İzmir</span></div>
+        <div class="row"><span data-i18n="comp_base">Base</span><span data-i18n="comp_base_v">Ankara · Napoli ’25</span></div>
+        <div class="row thick"><span data-i18n="comp_lang">Languages</span><span>TR · EN · IT · DE</span></div>
+        <p class="note" data-i18n="comp_note">Contains: process engineering, decision briefs, long-form writing. May contain strong opinions on nutrition science.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band wash" id="studio">
+  <div class="inner">
+    <div class="studio-top">
+      <div class="copy rv">
+        <p class="eyebrow" data-i18n="s_eyebrow">The studio</p>
+        <img class="logo-big" src="media/ginova-logo.png" alt="GiNOVA">
+        <h2 data-i18n="s_title">Hard questions, turned into decisions.</h2>
+        <p data-i18n="s_body">GiNOVA applies generative intelligence to complex business problems, at a speed and price that make the decision worth more than the advice. Every engagement starts with a small, paid, clearly scoped step.</p>
+      </div>
+      <figure class="arch rv" style="margin:0">
+        <img src="media/marble.jpg" alt="The GiNOVA laurel crest carved into a marble pillar in a sunlit courtyard">
+        <figcaption class="caption" data-i18n="cap_marble">“We had it carved in marble. Slide decks felt temporary.”</figcaption>
+      </figure>
+    </div>
+    <div class="divisions">
+      <div class="division rv"><h3 data-i18n="d1_t">Engineering</h3><p data-i18n="d1_b">Product, process and investment questions: capacity, equipment and how a line should actually run.</p><p class="entry" data-i18n="d1_e">Starts with a scoped engineering consult</p></div>
+      <div class="division rv"><h3 data-i18n="d2_t">Consultancy</h3><p data-i18n="d2_b">Enterprise generative AI and board reporting, built so leadership can act on it.</p><p class="entry" data-i18n="d2_e">Starts with a paid diagnostic and a Decision Brief</p></div>
+      <div class="division rv"><h3>MediaLab™</h3><p data-i18n="d3_b">Sound, film and brand stories, made with the same tools the consultancy advises on.</p><p class="entry" data-i18n="d3_e">Starts with a sound or motion commission</p></div>
+    </div>
+    <div class="panorama rv"><img src="media/systems-sketch.webp" alt="Architectural pencil drawing of terraced stone buildings, pools and olive trees above the sea" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="band" id="research">
+  <div class="inner">
+    <div class="research-intro">
+      <div>
+        <div class="head rv" style="margin-bottom:1.6rem">
+          <p class="eyebrow" data-i18n="r_eyebrow">The research</p>
+          <h2><span data-i18n="mq_signal">Signal, not substrate</span>.</h2>
+          <p data-i18n="r_with">A research programme with Prof. Dr. Fatih Yıldız, METU</p>
+        </div>
+        <div class="prose rv">
+          <p data-i18n="r_body1">The same meal does not produce the same metabolic result in every person, or even in the same person on different days. Nutrients act as signals the body evaluates in context: circadian phase, inflammatory state and metabolic history decide which pathways run.</p>
+          <p data-i18n="r_body2">If nutrients are signals, food can be engineered for the response it should trigger.</p>
+        </div>
+      </div>
+      <svg class="fork ink draw rv" viewBox="0 0 260 120" aria-hidden="true"><g filter="url(#inkf)">
+        <path d="M8 62 L96 62" stroke-width="7"/>
+        <path d="M96 62 C108 62 112 50 122 50" stroke-width="3"/>
+        <path d="M96 62 C108 62 112 74 122 74" stroke-width="3"/>
+        <path class="gold" d="M122 50 C140 50 142 14 156 14 C170 14 168 96 182 96 C196 96 194 34 208 34 C222 34 222 56 252 56" stroke-width="3" style="--d:.7s"/>
+        <path d="M122 74 C150 74 170 78 252 72" stroke-width="1.4" stroke-dasharray="4 6" style="--d:1s"/>
+      </g></svg>
+    </div>
+    <div class="chips rv">
+      <span data-i18n="p_amp">amplitude</span><span data-i18n="p_thr">threshold</span><span data-i18n="p_rise">rise time</span><span data-i18n="p_decay">decay time</span><span data-i18n="p_dur">duration above threshold</span><span data-i18n="p_ref">refractory period</span>
+    </div>
+
+    <div class="lab rv">
+      <div class="lab-plot"><canvas id="lab" role="img" aria-label="Nutrient signal curve against the response threshold"></canvas></div>
+      <div class="lab-side">
+        <h3 data-i18n="lab_title">Signal lab</h3>
+        <p data-i18n="lab_body">Move the sliders. A nutrient signal only triggers a response while it stays above the body’s threshold. Switch to an older adult and watch the same input struggle to cross it.</p>
+        <div class="seg" role="group" aria-label="Context">
+          <button type="button" id="ctx-young" aria-pressed="true" data-i18n="lab_young">Young adult</button>
+          <button type="button" id="ctx-old" aria-pressed="false" data-i18n="lab_old">Older adult</button>
+        </div>
+        <div class="ctl"><label for="amp"><span data-i18n="p_amp">amplitude</span><output id="o-amp"></output></label><input id="amp" type="range" min="0.2" max="1" step="0.01" value="0.72"></div>
+        <div class="ctl"><label for="thr"><span data-i18n="p_thr">threshold</span><output id="o-thr"></output></label><input id="thr" type="range" min="0.2" max="0.8" step="0.01" value="0.45"></div>
+        <div class="ctl"><label for="rise"><span data-i18n="p_rise">rise time</span><output id="o-rise"></output></label><input id="rise" type="range" min="5" max="60" step="1" value="18"></div>
+        <div class="ctl"><label for="decay"><span data-i18n="p_decay">decay time</span><output id="o-decay"></output></label><input id="decay" type="range" min="30" max="180" step="1" value="70"></div>
+        <dl class="readouts">
+          <div><dt data-i18n="lab_peak">Peak</dt><dd id="r-peak">–</dd></div>
+          <div><dt data-i18n="lab_tpeak">Time to peak</dt><dd id="r-tpeak">–</dd></div>
+          <div><dt data-i18n="lab_above">Time above threshold</dt><dd id="r-above">–</dd></div>
+          <div><dt data-i18n="lab_admit">Signal admitted</dt><dd id="r-admit">–</dd></div>
+        </dl>
+      </div>
+      <p class="fine" data-i18n="lab_note">Illustrative model in arbitrary units. Not dietary advice.</p>
+      <p class="caption" data-i18n="cap_lab">“Same lunch, darling. Entirely different signal.”</p>
+    </div>
+
+    <div class="papers">
+      <article class="paper rv"><p class="eyebrow" data-i18n="pp_theory">Theory</p><h3>The Metabolic Operating System (mOS) Hypothesis</h3><p data-i18n="p1_b">Why do identical nutritional inputs give divergent outcomes? A control-theory account of nutrient response.</p><p class="status" data-i18n="p1_s">Prepared for Trends in Endocrinology &amp; Metabolism</p></article>
+      <article class="paper rv"><p class="eyebrow" data-i18n="pp_method">Method</p><h3>Signal-Based Food Engineering</h3><p data-i18n="p2_b">Designing products for defined metabolic outcomes: a signal vocabulary, the Synergistic Signal Index (SSI) and matrix architecture as the design lever.</p><p class="status" data-i18n="p2_s">Submitted to Journal of Food Science · revision resuming</p></article>
+      <article class="paper rv"><p class="eyebrow" data-i18n="pp_gov">Governance</p><h3>When Food Claims Fail</h3><p data-i18n="p3_b">When is a functional food claim valid? A minimum substantiation floor: context, reliability across conditions, disclosed failure modes.</p><p class="status" data-i18n="p3_s">Ready for submission</p></article>
+    </div>
+
+    <article class="longevity rv">
+      <img src="media/hero-sketch.webp" alt="" loading="lazy">
+      <div class="content">
+        <p class="eyebrow" data-i18n="lg_eyebrow">Longevity</p>
+        <h3 data-i18n="lg_title">Ageing as a shift in metabolic admissibility.</h3>
+        <p data-i18n="lg_body">Older adults respond less to the same nutrient input even when delivery is intact. The mOS view reads this as a change in the conditions under which the body accepts a signal, not a simple loss of capacity. Longevity is where the signal framework matters most.</p>
+        <p class="status" data-i18n="lg_s">Conference abstract · 2026 · with Prof. Dr. Fatih Yıldız</p>
+      </div>
+    </article>
+
+    <div class="book">
+      <img class="rv" src="media/process-sketch.webp" alt="Exploded technical drawing of a lemon, its segments opening like machine parts" loading="lazy">
+      <div class="copy rv">
+        <p class="eyebrow" data-i18n="bk_eyebrow">Book in progress · in Turkish</p>
+        <h3>Beslenme 2.0</h3>
+        <p class="sub">Substrattan sinyale, metabolik kontrol mimarisi altında beslenme</p>
+        <p data-i18n="bk_body">From substrate to signal: nutrition under a metabolic control architecture. The book-length account of the metabolism studies behind the papers, written with Prof. Dr. Fatih Yıldız.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band wash" id="brands">
+  <div class="inner">
+    <div class="head rv">
+      <p class="eyebrow" data-i18n="b_eyebrow">The brands</p>
+      <h2 data-i18n="b_title">One theory, a house of brands.</h2>
+    </div>
+    <div class="house">
+      <div class="node rv">
+        <p class="eyebrow" data-i18n="bm_l">The nutrition system</p>
+        <h3>BIOMIKS<sup style="font-size:.4em">®</sup></h3>
+        <p class="sub">Gıda Biyomiksleri</p>
+        <p data-i18n="bm_b">BIOMIKS is the name for the system itself, not a single product. Food structure and digestion kinetics are treated as an engineering discipline: matrices are built and sequenced for a defined response, and every formula is mapped for viscosity, nutrient density and postprandial behaviour.</p>
+        <div class="pills"><span>Satiety</span><span>Protein-Mineral</span><span>Executive</span><span>Athletic</span><span>Family</span><span>Mediterranean</span></div>
+      </div>
+      <div class="stem" aria-hidden="true"></div>
+      <div class="node rv">
+        <p class="eyebrow" data-i18n="al_l">The root organisation</p>
+        <img class="crest" src="media/alimentarus.jpg" alt="Alimentarus Systems crest: a shield with a wheat ear and a gear under the motto Ordo Cibi">
+        <p class="sub">Ordo cibi · mensura, structura, regimen</p>
+        <p data-i18n="al_b">The parent of every product, and of the goods and services still to come. Alimentarus carries BIOMIKS into two branches: human nutrition and animal metabolism.</p>
+      </div>
+      <svg class="split ink draw" viewBox="0 0 460 56" preserveAspectRatio="none" aria-hidden="true"><g filter="url(#inkf)"><path d="M230 0 L230 18 C230 26 222 28 200 28 L118 28 C100 28 96 34 96 56" stroke-width="2"/><path d="M230 18 C230 26 238 28 260 28 L342 28 C360 28 364 34 364 56" stroke-width="2"/></g></svg>
+      <div class="branches">
+        <article class="branch rv">
+          <figure>
+            <img class="bottle" src="media/bioforce-product.jpg" alt="Nutradina BIOFORCE product design concept: a white bottle with a blue droplet window">
+            <figcaption class="caption" data-i18n="cap_bottle">“It doesn’t cure anything. It just sends a very clear message.”</figcaption>
+          </figure>
+          <p class="eyebrow" data-i18n="nu_l">Human nutrition · since 2015</p>
+          <h4>Nutradina™</h4>
+          <p data-i18n="nu_b">Signal-based nutrition. The consumer brand, which began in 2015 as Nutradyne, with product lines engineered around the signal framework.</p>
+          <div class="pills" style="justify-content:flex-start"><span>BIOFORCE</span><span>BioShield</span><span>BioStart</span><span>DermaShield</span><span>COGNITA</span></div>
+          <p class="fine">nutradina.it</p>
+        </article>
+        <article class="branch rv">
+          <figure>
+            <img src="media/xooform-horse.jpg" alt="Black racehorse in green-and-black Xooform racing gear in a pine forest at sunset">
+            <figcaption class="caption" data-i18n="cap_horse">“He isn’t faster. He’s metabolically admissible.”</figcaption>
+          </figure>
+          <p class="eyebrow" data-i18n="xo_l">Animal metabolism</p>
+          <h4>Xooform™</h4>
+          <p data-i18n="xo_b">Signal-based nutrition for animal metabolism, from companion animals (Xooform Performa) to racehorses.</p>
+          <div class="pills" style="justify-content:flex-start"><span>Performa</span><span>Racing</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="gallery" tabindex="0" aria-label="Concept imagery">
+      <figure><img src="media/bioshield.jpg" alt="Man in a red flannel shirt holding a Nutradina BioShield bottle in a forest at dusk" loading="lazy"><figcaption>Nutradina · BioShield</figcaption></figure>
+      <figure><img src="media/dermashield.jpg" alt="Woman sitting on a fallen log beside a Nutradina DermaShield bottle" loading="lazy"><figcaption>Nutradina · DermaShield</figcaption></figure>
+      <figure><img src="media/biostart.jpg" alt="Man holding an amber Nutradina BioStart bottle in a forest" loading="lazy"><figcaption>Nutradina · BioStart</figcaption></figure>
+      <figure><img src="media/xooform-pet.jpg" alt="Lynx kitten beside a steel Xooform Performa bowl on moss" loading="lazy"><figcaption>Xooform · Performa</figcaption></figure>
+      <figure><img src="media/xooform-horse.jpg" alt="Racehorse in Xooform racing gear" loading="lazy"><figcaption>Xooform · Racing</figcaption></figure>
+    </div>
+    <p class="fine" data-i18n="g_note">Concept imagery created with generative tools at GiNOVA Labs. Models are not real people.</p>
+    <p class="fine" data-i18n="b_fine" style="margin-top:.3rem">R&amp;D concepts. No claim of validated product efficacy is made.</p>
+  </div>
+</section>
+
+<section class="band" id="films">
+  <div class="inner">
+    <div class="head rv">
+      <p class="eyebrow" data-i18n="fl_eyebrow">Films</p>
+      <h2 data-i18n="fl_title">Nutradina on screen.</h2>
+      <p data-i18n="fl_body">Three commercial concepts by GiNOVA Labs: chess, football and a cinematic BIOFORCE scenario.</p>
+    </div>
+    <div class="films rv">
+      <div class="screen"><video id="film" controls playsinline preload="none" poster="media/chess-concept.jpg" src="media/chess-concept.mp4"></video></div>
+      <div class="thumbs">
+        <button class="thumb" type="button" aria-current="true" data-src="media/chess-concept.mp4" data-poster="media/chess-concept.jpg"><img src="media/chess-concept.jpg" alt=""><span>BioShield × COGNITA · <b data-i18n="fl_1w" style="font-weight:400">Chess</b></span></button>
+        <button class="thumb" type="button" aria-current="false" data-src="media/football-concept.mp4" data-poster="media/football-concept.jpg"><img src="media/football-concept.jpg" alt=""><span>BioShield × COGNITA · <b data-i18n="fl_2w" style="font-weight:400">Football</b></span></button>
+        <button class="thumb" type="button" aria-current="false" data-src="media/bioforce-concept.mp4" data-poster="media/bioforce-concept.jpg"><img src="media/bioforce-concept.jpg" alt=""><span>BIOFORCE · <b data-i18n="fl_3w" style="font-weight:400">Cinematic concept</b></span></button>
+      </div>
+      <p class="fine" data-i18n="fl_note">Creative concept films. Visual effects depict imagined outcomes, not product performance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band wash" id="sound">
+  <div class="inner records">
+    <div class="deck rv" id="deck">
+      <div class="vinyl"></div>
+      <div class="sleeve"><img src="media/records-cover.jpg" alt="GiNOVA Records cover: a cassette on a wet neon-lit street"></div>
+      <svg class="coupe ink draw" viewBox="0 0 120 130" aria-hidden="true"><g filter="url(#inkf)">
+        <path class="fillw" d="M20 30 Q60 74 100 30 Z" stroke-width="3"/>
+        <path d="M60 52 L60 108" stroke-width="3"/>
+        <path d="M36 112 Q60 104 84 112" stroke-width="3"/>
+        <circle cx="52" cy="22" r="3" stroke-width="1.6" style="--d:.6s"/>
+        <circle cx="66" cy="12" r="2.2" stroke-width="1.4" style="--d:.8s"/>
+        <circle cx="58" cy="4" r="1.6" stroke-width="1.2" style="--d:1s"/>
+      </g></svg>
+    </div>
+    <div class="player rv">
+      <div class="head" style="margin-bottom:.6rem">
+        <p class="eyebrow" data-i18n="so_eyebrow">Sound</p>
+        <h2>GiNOVA Records.</h2>
+        <p data-i18n="so_body">Original music from the SoundLab at GiNOVA Labs, written for the brands and the films.</p>
+      </div>
+      <ul class="tracks" id="tracks">
+        <li><button type="button" data-src="media/campi-flegrei.mp3"><span class="ico"><svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg></span><span class="t">Campi Flegrei</span><span class="d">GiNOVA Records</span></button></li>
+        <li><button type="button" data-src="media/dove-sei.mp3"><span class="ico"><svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg></span><span class="t">Dove sei</span><span class="d">GiNOVA Records</span></button></li>
+        <li><button type="button" data-src="media/end-of-the-century-2026.mp3"><span class="ico"><svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg></span><span class="t">End of the Century</span><span class="d">2026</span></button></li>
+      </ul>
+      <div class="scrub"><span id="t-cur">0:00</span><input id="seek" type="range" min="0" max="1000" value="0" aria-label="Seek"><span id="t-dur">0:00</span></div>
+      <canvas class="viz" id="viz" aria-hidden="true"></canvas>
+      <audio id="audio" preload="none"></audio>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="writing">
+  <div class="inner">
+    <div class="head rv">
+      <p class="eyebrow" data-i18n="w_eyebrow">Writing</p>
+      <h2 data-i18n="w_title">Essays.</h2>
+      <p data-i18n="w_body">On Medium, in English and Turkish.</p>
+    </div>
+    <div class="essays">
+      <div class="group rv">
+        <h3 data-i18n="g1">Food as signal</h3>
+        <a class="essay" href="https://medium.com/biosystems-strategy/food-is-code-786f656cb397"><span class="t">Food Is Code</span><span class="m">09.12.2025</span><span class="d">Biosystems Strategy</span></a>
+        <a class="essay" href="https://medium.com/food-strategy/the-leucine-protocol-49a156e85698"><span class="t">The Leucine Protocol</span><span class="m">03.12.2025</span><span class="d">Food Strategy · C₆H₁₃NO₂</span></a>
+        <a class="essay" href="https://medium.com/gida-strateji%CC%87/l%C3%B6sin-protokol%C3%BC-637df1b42bbd"><span class="t">Lösin Protokolü<span class="lg">TR</span></span><span class="m">03.12.2025</span><span class="d">Gıda Stratejisi</span></a>
+        <a class="essay" href="https://medium.com/food-strategy/the-signal-within-substance-e37e784958ec"><span class="t">The Signal Within Substance</span><span class="m">27.11.2025</span><span class="d">Food Strategy</span></a>
+        <a class="essay" href="https://medium.com/gida-strateji%CC%87/yerken-d%C3%BCnyayi-okumak-978a05240f03"><span class="t">Yerken Dünyayı Okumak<span class="lg">TR</span></span><span class="m">12.12.2025</span><span class="d">Gıda Stratejisi</span></a>
+        <a class="essay" href="https://medium.com/@ilalan/protein-3-0-structured-amino-architecture-4d61fb2890f5"><span class="t">Protein 3.0</span><span class="m">Medium</span><span class="d">Structured Amino Architecture</span></a>
+        <a class="essay" href="https://medium.com/future-sense/from-pasteurization-to-personalization-f87a1459bf1c"><span class="t">From Pasteurization to Personalization</span><span class="m">Future Sense</span></a>
+      </div>
+      <div>
+        <div class="group rv">
+          <h3 data-i18n="g2">Food as power</h3>
+          <a class="essay" href="https://medium.com/food-strategy/the-poisoned-republic-bdcb7c2e67bd"><span class="t">The Poisoned Republic</span><span class="m">27.11.2025</span><span class="d">Food Strategy</span></a>
+          <a class="essay" href="https://medium.com/food-strategy/the-kill-stack-49cacead5275"><span class="t">The Kill Stack</span><span class="m">Food Strategy</span><span class="d">Hurdle technology and the quiet stack of preservation</span></a>
+        </div>
+        <div class="group rv" style="margin-top:2.5rem">
+          <h3 data-i18n="g3">Machines as collaborators</h3>
+          <a class="essay" href="https://ilalan.medium.com/the-new-self-a8fdc334f55a"><span class="t">The New Self</span><span class="m">29.03.2026</span><span class="d">When artificial intelligence comes alive as a person</span></a>
+          <a class="essay" href="https://ilalan.medium.com/the-collaborators-speak-30ad97b46ac1"><span class="t">The Collaborators Speak</span><span class="m">26.12.2025</span><span class="d">Two interviews, from the side of the AI</span></a>
+          <a class="essay" href="https://medium.com/future-sense/the-man-who-tried-to-save-intel-567795f799af"><span class="t">The Man Who Tried to Save Intel</span><span class="m">Future Sense</span></a>
+        </div>
+        <div class="group rv" style="margin-top:2.5rem">
+          <h3 data-i18n="g4">Elsewhere</h3>
+          <a class="essay" href="https://medium.com/the-early-focus-institute/early-years-intelligence-88c76b6b3dd4"><span class="t">Early Years Intelligence</span><span class="m">10.12.2025</span></a>
+          <a class="essay" href="https://ilalan.medium.com/the-stars-dont-care-e92fe9604886"><span class="t">The Stars Don’t Care</span><span class="m">06.12.2025</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band wash" id="press">
+  <div class="inner">
+    <div class="head rv">
+      <p class="eyebrow" data-i18n="pr_eyebrow">Press kit</p>
+      <h2 data-i18n="pr_title">Bios, ready to copy.</h2>
+      <p data-i18n="pr_body">Available in English, Turkish and Italian.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Bio language">
+      <button role="tab" id="bt-en" aria-selected="true" aria-controls="bp-en">English</button>
+      <button role="tab" id="bt-tr" aria-selected="false" aria-controls="bp-tr">Türkçe</button>
+      <button role="tab" id="bt-it" aria-selected="false" aria-controls="bp-it">Italiano</button>
+    </div>
+    <div class="bios" id="bp-en" role="tabpanel" aria-labelledby="bt-en" lang="en" dir="ltr">
+      <div class="bio"><div class="k"><span data-i18n="bio_one">One line</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>Founding Director of GiNOVA. 15 years in food, 15 in IT. Writing on food systems, geopolitics and machine intelligence. Food is code.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_short">Short</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>Kunter Ilalan is the founding director of GiNOVA, a Turkish engineering and consultancy firm that applies generative intelligence to complex business problems. A METU-trained food engineer, he spent fifteen years in the food industry and fifteen in information technology. His essays in Food Strategy, Future Sense and Gıda Stratejisi treat food as a signalling system and a source of national power, and ask what changes when AI becomes a working collaborator.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_long">Long</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v">
+        <p>Kunter Ilalan is the founding director of GiNOVA Mühendislik Danışmanlık A.Ş. He holds a BSc in Food Engineering from Middle East Technical University (METU) and has spent fifteen years in the food industry and fifteen in information technology. Born in İzmir, he has lived most of his life in Ankara, with a recent year in Naples. He speaks Turkish, English and Italian, and some German. The firm works across three divisions: engineering consultancy on products, processes and investments; enterprise generative AI and board reporting; and MediaLab™, which produces sound, film and brand stories. Every engagement starts with a small, paid, clearly scoped step, such as a diagnostic that ends in a Decision Brief.</p>
+        <p>As a writer, Ilalan works where food science, geopolitics and machine logic meet. His essays argue that nutrients act as molecular instructions rather than simple fuel, that preservation and supply are instruments of national power, and that AI is turning from tool into collaborator. He publishes in English and Turkish.</p>
+        <p>With Prof. Dr. Fatih Yıldız of METU, he leads a research programme on signal-based nutrition: the Metabolic Operating System hypothesis, a framework for signal-based food engineering, and a substantiation standard for functional food claims. The work extends to longevity, feeds a book in progress, Beslenme 2.0, and underpins BIOMIKS®, a nutrition system of controlled food matrices. Alimentarus Systems, the root organisation, carries it into Nutradina™, a human-nutrition brand he started in 2015, and Xooform™, for animal metabolism.</p>
+      </div></div>
+    </div>
+    <div class="bios" id="bp-tr" role="tabpanel" aria-labelledby="bt-tr" lang="tr" dir="ltr" hidden>
+      <div class="bio"><div class="k"><span data-i18n="bio_one">One line</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>GiNOVA Kurucu Direktörü. Gıdada 15, bilişimde 15 yıl. Gıda sistemleri, jeopolitik ve makine zekâsı üzerine yazıyor. Gıda bir koddur.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_short">Short</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>Kunter Ilalan, karmaşık iş problemlerine üretken yapay zekâ ile çözüm geliştiren GiNOVA Mühendislik Danışmanlık A.Ş.’nin kurucu direktörüdür. ODTÜ Gıda Mühendisliği mezunudur; on beş yılı gıda sektöründe, on beş yılı bilişimde geçmiştir. Gıda Stratejisi, Food Strategy ve Future Sense’te yayımlanan yazılarında gıdayı bir sinyal sistemi ve ulusal güç kaynağı olarak ele alıyor; yapay zekânın bir çalışma ortağına dönüşmesinin neleri değiştirdiğini sorguluyor.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_long">Long</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v">
+        <p>Kunter Ilalan, GiNOVA Mühendislik Danışmanlık A.Ş.’nin kurucu direktörüdür. ODTÜ Gıda Mühendisliği lisans mezunudur; on beş yılını gıda sektöründe, on beş yılını bilişimde geçirmiştir. İzmir doğumludur; hayatının büyük bölümünü Ankara’da geçirmiş, yakın zamanda bir yıl Napoli’de yaşamıştır. Türkçe, İngilizce ve İtalyanca konuşur; Almanca da bilir. GiNOVA üç birimle çalışır: ürün, süreç ve yatırım sorularına yönelik mühendislik danışmanlığı; kurumsal üretken yapay zekâ ve yönetim kurulu raporlaması; ses, film ve marka hikâyeleri üreten MediaLab™. Her proje, Karar Özeti ile sonuçlanan bir ön tanı gibi küçük, ücretli ve kapsamı net bir adımla başlar.</p>
+        <p>Yazar olarak gıda bilimi, jeopolitik ve makine mantığının kesiştiği alanda çalışıyor. Yazılarında besinlerin basit bir yakıt değil moleküler talimatlar gibi davrandığını, gıdanın korunması ve tedarikinin ulusal güç aracı olduğunu ve yapay zekânın araçtan ortağa dönüştüğünü savunuyor. Türkçe ve İngilizce yayın yapıyor.</p>
+        <p>ODTÜ’den Prof. Dr. Fatih Yıldız ile birlikte sinyal temelli beslenme üzerine bir araştırma programı yürütüyor: Metabolik İşletim Sistemi (mOS) hipotezi, sinyal temelli gıda mühendisliği çerçevesi ve fonksiyonel gıda beyanları için bir doğrulama standardı. Çalışmalar uzun ömür (longevity) alanına uzanıyor; yazımı süren Beslenme 2.0 kitabını, kontrollü gıda matrislerinden oluşan BIOMIKS® beslenme sistemini besliyor. Çatı kuruluş Alimentarus Systems, bu sistemi 2015’te başlattığı insan beslenmesi markası Nutradina™ ve hayvan metabolizmasına yönelik Xooform™ ile ürüne dönüştürüyor.</p>
+      </div></div>
+    </div>
+    <div class="bios" id="bp-it" role="tabpanel" aria-labelledby="bt-it" lang="it" dir="ltr" hidden>
+      <div class="bio"><div class="k"><span data-i18n="bio_one">One line</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>Direttore fondatore di GiNOVA. 15 anni nel cibo, 15 nell’informatica. Scrive di sistemi alimentari, geopolitica e intelligenza artificiale. Il cibo è codice.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_short">Short</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v"><p>Kunter Ilalan è il direttore fondatore di GiNOVA, società turca di ingegneria e consulenza che applica l’intelligenza generativa a problemi aziendali complessi. Ingegnere alimentare formatosi al METU, ha trascorso quindici anni nell’industria alimentare e quindici nell’informatica. Nei suoi saggi su Food Strategy, Future Sense e Gıda Stratejisi tratta il cibo come sistema di segnali e fonte di potere nazionale, e si chiede cosa cambi quando l’IA diventa un vero collaboratore.</p></div></div>
+      <div class="bio"><div class="k"><span data-i18n="bio_long">Long</span><button class="copy-btn" type="button" data-i18n="copy">Copy</button></div><div class="v">
+        <p>Kunter Ilalan è il direttore fondatore di GiNOVA Mühendislik Danışmanlık A.Ş. Laureato in Ingegneria alimentare alla Middle East Technical University (METU), ha trascorso quindici anni nell’industria alimentare e quindici nell’informatica. Nato a İzmir, ha vissuto gran parte della sua vita ad Ankara e di recente un anno a Napoli. Parla turco, inglese e italiano, e un po’ di tedesco. GiNOVA lavora su tre divisioni: consulenza ingegneristica su prodotti, processi e investimenti; IA generativa d’impresa e reportistica per i consigli di amministrazione; e MediaLab™, che produce suono, film e storie di marca. Ogni incarico inizia con un passo piccolo, retribuito e ben definito, come una diagnosi che si conclude con un Decision Brief.</p>
+        <p>Come autore, Ilalan lavora dove si incontrano scienza degli alimenti, geopolitica e logica delle macchine. I suoi saggi sostengono che i nutrienti agiscono come istruzioni molecolari più che come semplice carburante, che conservazione e approvvigionamento sono strumenti di potere nazionale, e che l’IA sta passando da strumento a collaboratore. Pubblica in inglese e in turco.</p>
+        <p>Con il Prof. Dr. Fatih Yıldız del METU guida un programma di ricerca sulla nutrizione basata sul segnale: l’ipotesi del Metabolic Operating System, un quadro per l’ingegneria alimentare basata sul segnale e uno standard di prova per i claim sugli alimenti funzionali. Il lavoro si estende alla longevità, alimenta un libro in lavorazione, Beslenme 2.0, ed è alla base di BIOMIKS®, un sistema nutrizionale di matrici alimentari controllate. Alimentarus Systems, l’organizzazione madre, lo porta in Nutradina™, marchio di nutrizione umana nato nel 2015, e in Xooform™, dedicato al metabolismo animale.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="inner">
+    <p class="ordo">Ordo cibi.</p>
+    <svg class="swash ink draw" viewBox="0 0 520 34" aria-hidden="true" style="margin-top:-1.4rem"><g filter="url(#inkf)"><path d="M8 20 C 140 30, 300 4, 512 16" stroke-width="4"/></g></svg>
+    <div class="foot">
+      <span class="brand"><img src="media/ginova-emblem.png" alt="GiNOVA emblem">Kunter Ilalan · GiNOVA Mühendislik Danışmanlık A.Ş.</span>
+      <span><span data-i18n="ft_contact">Project enquiries</span>: satis@ginova.org · <a href="https://ginova.org">ginova.org</a> · <a href="https://nutradina.it">nutradina.it</a> · <a href="https://ilalan.medium.com">Medium</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var root=document.documentElement; root.classList.add('js');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- i18n ---------- */
+var I18N={
+en:{nav_founder:"Founder",nav_studio:"Studio",nav_research:"Research",nav_brands:"Brands",nav_films:"Films",nav_sound:"Sound",nav_writing:"Writing",nav_press:"Press",
+hero_eyebrow:"Founding Director · GiNOVA",hero_lede:"Fifteen years in the food industry, fifteen in information technology. I work where food science, machine intelligence and strategy meet. My thesis is short: <em>food is code</em>.",cta_research:"Explore the research",cta_films:"Watch the films",
+cap_founder:"“A lungo, please. And hold the calories, I’m counting signals.”",mq_code:"Food is code",mq_signal:"Signal, not substrate",
+f_eyebrow:"The founder",f_title:"An engineer who reads food like code.",f_body:"Trained as a food engineer at METU, Kunter spent fifteen years inside the food industry and fifteen more in information technology. Born in İzmir, at home in Ankara, recently a year in Naples. He founded GiNOVA to give hard decisions the rigour of engineering and the speed of generative AI.",
+comp_title:"Composition",comp_serving:"Serving size",comp_serving_v:"1 founder",comp_food:"Food industry",comp_it:"Information technology",comp_years:"15 yrs",comp_degree:"BSc Food Engineering",comp_degree_v:"METU",comp_origin:"Origin",comp_origin_v:"İzmir",comp_base:"Base",comp_base_v:"Ankara · Napoli ’25",comp_lang:"Languages",comp_note:"Contains: process engineering, decision briefs, long-form writing. May contain strong opinions on nutrition science.",
+s_eyebrow:"The studio",s_title:"Hard questions, turned into decisions.",s_body:"GiNOVA applies generative intelligence to complex business problems, at a speed and price that make the decision worth more than the advice. Every engagement starts with a small, paid, clearly scoped step.",cap_marble:"“We had it carved in marble. Slide decks felt temporary.”",
+d1_t:"Engineering",d1_b:"Product, process and investment questions: capacity, equipment and how a line should actually run.",d1_e:"Starts with a scoped engineering consult",d2_t:"Consultancy",d2_b:"Enterprise generative AI and board reporting, built so leadership can act on it.",d2_e:"Starts with a paid diagnostic and a Decision Brief",d3_b:"Sound, film and brand stories, made with the same tools the consultancy advises on.",d3_e:"Starts with a sound or motion commission",
+r_eyebrow:"The research",r_with:"A research programme with Prof. Dr. Fatih Yıldız, METU",r_body1:"The same meal does not produce the same metabolic result in every person, or even in the same person on different days. Nutrients act as signals the body evaluates in context: circadian phase, inflammatory state and metabolic history decide which pathways run.",r_body2:"If nutrients are signals, food can be engineered for the response it should trigger.",
+p_amp:"amplitude",p_thr:"threshold",p_rise:"rise time",p_decay:"decay time",p_dur:"duration above threshold",p_ref:"refractory period",
+lab_title:"Signal lab",lab_body:"Move the sliders. A nutrient signal only triggers a response while it stays above the body’s threshold. Switch to an older adult and watch the same input struggle to cross it.",lab_young:"Young adult",lab_old:"Older adult",lab_peak:"Peak",lab_tpeak:"Time to peak",lab_above:"Time above threshold",lab_admit:"Signal admitted",lab_yes:"Yes",lab_no:"No",lab_min:"min",lab_note:"Illustrative model in arbitrary units. Not dietary advice.",lab_axis:"minutes after the meal",lab_thr_label:"threshold",cap_lab:"“Same lunch, darling. Entirely different signal.”",
+pp_theory:"Theory",pp_method:"Method",pp_gov:"Governance",p1_b:"Why do identical nutritional inputs give divergent outcomes? A control-theory account of nutrient response.",p1_s:"Prepared for Trends in Endocrinology &amp; Metabolism",p2_b:"Designing products for defined metabolic outcomes: a signal vocabulary, the Synergistic Signal Index (SSI) and matrix architecture as the design lever.",p2_s:"Submitted to Journal of Food Science · revision resuming",p3_b:"When is a functional food claim valid? A minimum substantiation floor: context, reliability across conditions, disclosed failure modes.",p3_s:"Ready for submission",
+lg_eyebrow:"Longevity",lg_title:"Ageing as a shift in metabolic admissibility.",lg_body:"Older adults respond less to the same nutrient input even when delivery is intact. The mOS view reads this as a change in the conditions under which the body accepts a signal, not a simple loss of capacity. Longevity is where the signal framework matters most.",lg_s:"Conference abstract · 2026 · with Prof. Dr. Fatih Yıldız",
+bk_eyebrow:"Book in progress · in Turkish",bk_body:"From substrate to signal: nutrition under a metabolic control architecture. The book-length account of the metabolism studies behind the papers, written with Prof. Dr. Fatih Yıldız.",
+b_eyebrow:"The brands",b_title:"One theory, a house of brands.",bm_l:"The nutrition system",bm_b:"BIOMIKS is the name for the system itself, not a single product. Food structure and digestion kinetics are treated as an engineering discipline: matrices are built and sequenced for a defined response, and every formula is mapped for viscosity, nutrient density and postprandial behaviour.",al_l:"The root organisation",al_b:"The parent of every product, and of the goods and services still to come. Alimentarus carries BIOMIKS into two branches: human nutrition and animal metabolism.",nu_l:"Human nutrition · since 2015",nu_b:"Signal-based nutrition. The consumer brand, which began in 2015 as Nutradyne, with product lines engineered around the signal framework.",xo_l:"Animal metabolism",xo_b:"Signal-based nutrition for animal metabolism, from companion animals (Xooform Performa) to racehorses.",cap_bottle:"“It doesn’t cure anything. It just sends a very clear message.”",cap_horse:"“He isn’t faster. He’s metabolically admissible.”",g_note:"Concept imagery created with generative tools at GiNOVA Labs. Models are not real people.",b_fine:"R&amp;D concepts. No claim of validated product efficacy is made.",
+fl_eyebrow:"Films",fl_title:"Nutradina on screen.",fl_body:"Three commercial concepts by GiNOVA Labs: chess, football and a cinematic BIOFORCE scenario.",fl_1w:"Chess",fl_2w:"Football",fl_3w:"Cinematic concept",fl_note:"Creative concept films. Visual effects depict imagined outcomes, not product performance.",
+so_eyebrow:"Sound",so_body:"Original music from the SoundLab at GiNOVA Labs, written for the brands and the films.",
+w_eyebrow:"Writing",w_title:"Essays.",w_body:"On Medium, in English and Turkish.",g1:"Food as signal",g2:"Food as power",g3:"Machines as collaborators",g4:"Elsewhere",
+pr_eyebrow:"Press kit",pr_title:"Bios, ready to copy.",pr_body:"Available in English, Turkish and Italian.",bio_one:"One line",bio_short:"Short",bio_long:"Long",copy:"Copy",copied:"Copied",copyfail:"Select the text",ft_contact:"Project enquiries",native:""},
+
+tr:{nav_founder:"Kurucu",nav_studio:"Stüdyo",nav_research:"Araştırma",nav_brands:"Markalar",nav_films:"Filmler",nav_sound:"Ses",nav_writing:"Yazılar",nav_press:"Basın",
+hero_eyebrow:"Kurucu Direktör · GiNOVA",hero_lede:"On beş yıl gıda sektöründe, on beş yıl bilişimde. Gıda bilimi, makine zekâsı ve stratejinin kesiştiği yerde çalışıyorum. Tezim kısa: <em>gıda bir koddur</em>.",cta_research:"Araştırmayı keşfedin",cta_films:"Filmleri izleyin",
+cap_founder:"“Bir lungo lütfen. Kalorisi kalsın; ben sinyal sayıyorum.”",mq_code:"Gıda bir koddur",mq_signal:"Substrat değil, sinyal",
+f_eyebrow:"Kurucu",f_title:"Gıdayı kod gibi okuyan bir mühendis.",f_body:"ODTÜ’de gıda mühendisi olarak yetişen Kunter, on beş yılını gıda sektöründe, on beş yılını da bilişimde geçirdi. İzmir doğumlu, Ankaralı; yakın zamanda bir yıl Napoli’de yaşadı. GiNOVA’yı, zor kararlara mühendisliğin titizliğini ve üretken yapay zekânın hızını kazandırmak için kurdu.",
+comp_title:"Bileşim",comp_serving:"Porsiyon",comp_serving_v:"1 kurucu",comp_food:"Gıda sektörü",comp_it:"Bilişim",comp_years:"15 yıl",comp_degree:"Gıda Mühendisliği (lisans)",comp_degree_v:"ODTÜ",comp_origin:"Memleket",comp_origin_v:"İzmir",comp_base:"Yaşam",comp_base_v:"Ankara · Napoli ’25",comp_lang:"Diller",comp_note:"İçerik: proses mühendisliği, karar özetleri, uzun soluklu yazılar. Beslenme bilimi hakkında güçlü görüşler içerebilir.",
+s_eyebrow:"Stüdyo",s_title:"Zor soruları karara dönüştürür.",s_body:"GiNOVA, karmaşık iş problemlerine üretken yapay zekâyı uygular; kararın değeri danışmanlık bedelini aşacak hız ve fiyatla. Her proje küçük, ücretli ve kapsamı net bir adımla başlar.",cap_marble:"“Mermere kazıttık. Sunumlar fazla geçici geldi.”",
+d1_t:"Mühendislik",d1_b:"Ürün, süreç ve yatırım soruları: kapasite, ekipman ve bir hattın gerçekte nasıl çalışması gerektiği.",d1_e:"Kapsamı belirli bir mühendislik görüşmesiyle başlar",d2_t:"Danışmanlık",d2_b:"Kurumsal üretken yapay zekâ ve yönetim kurulu raporlaması; yönetimin harekete geçebileceği biçimde.",d2_e:"Ücretli bir ön tanı ve Karar Özeti ile başlar",d3_b:"Danışmanlığın önerdiği araçlarla üretilen ses, film ve marka hikâyeleri.",d3_e:"Bir ses ya da hareketli görüntü siparişiyle başlar",
+r_eyebrow:"Araştırma",r_with:"ODTÜ’den Prof. Dr. Fatih Yıldız ile bir araştırma programı",r_body1:"Aynı öğün herkeste, hatta aynı kişide farklı günlerde aynı metabolik sonucu vermez. Besinler, vücudun bağlam içinde değerlendirdiği sinyaller gibi davranır: hangi yolakların çalışacağına sirkadiyen evre, inflamasyon durumu ve metabolik geçmiş karar verir.",r_body2:"Besinler sinyalse, gıda tetiklemesi gereken yanıta göre tasarlanabilir.",
+p_amp:"genlik",p_thr:"eşik",p_rise:"yükselme süresi",p_decay:"sönümlenme süresi",p_dur:"eşik üstü süre",p_ref:"refrakter dönem",
+lab_title:"Sinyal laboratuvarı",lab_body:"Kaydırıcıları oynatın. Bir besin sinyali, yalnızca vücudun eşiğinin üstünde kaldığı sürece yanıt tetikler. Yaşlı bir yetişkine geçin; aynı girdinin eşiği aşmakta zorlandığını görün.",lab_young:"Genç yetişkin",lab_old:"Yaşlı yetişkin",lab_peak:"Tepe",lab_tpeak:"Tepeye süre",lab_above:"Eşik üstü süre",lab_admit:"Sinyal kabul edildi",lab_yes:"Evet",lab_no:"Hayır",lab_min:"dk",lab_note:"Keyfi birimlerle örnek model. Beslenme tavsiyesi değildir.",lab_axis:"öğünden sonraki dakikalar",lab_thr_label:"eşik",cap_lab:"“Aynı öğle yemeği hayatım. Bambaşka bir sinyal.”",
+pp_theory:"Kuram",pp_method:"Yöntem",pp_gov:"Yönetişim",p1_b:"Aynı besin girdileri neden farklı sonuçlar verir? Besin yanıtının kontrol kuramıyla açıklaması.",p1_s:"Trends in Endocrinology &amp; Metabolism için hazırlandı",p2_b:"Tanımlı metabolik sonuçlar için ürün tasarımı: sinyal sözlüğü, Sinerjik Sinyal İndeksi (SSI) ve tasarım kaldıracı olarak matriks mimarisi.",p2_s:"Journal of Food Science’a gönderildi · revizyon sürüyor",p3_b:"Fonksiyonel gıda beyanı ne zaman geçerlidir? Asgari doğrulama tabanı: bağlam, koşullar arası güvenilirlik, açıklanmış başarısızlık durumları.",p3_s:"Gönderime hazır",
+lg_eyebrow:"Uzun ömür",lg_title:"Metabolik kabul edilebilirlikte bir kayma olarak yaşlanma.",lg_body:"Yaşlı yetişkinler, besin iletimi sağlam olsa bile aynı girdiye daha zayıf yanıt verir. mOS bakışı bunu basit bir kapasite kaybı değil, vücudun bir sinyali kabul etme koşullarındaki değişim olarak okur. Sinyal çerçevesinin en çok önem taşıdığı alan uzun ömürdür.",lg_s:"Kongre özeti · 2026 · Prof. Dr. Fatih Yıldız ile",
+bk_eyebrow:"Yazımı süren kitap · Türkçe",bk_body:"Substrattan sinyale: metabolik kontrol mimarisi altında beslenme. Makalelerin arkasındaki metabolizma çalışmalarının kitap boyu anlatımı; Prof. Dr. Fatih Yıldız ile birlikte.",
+b_eyebrow:"Markalar",b_title:"Tek bir kuram, bir marka evi.",bm_l:"Beslenme sistemi",bm_b:"BIOMIKS tek bir ürünün değil, sistemin kendisinin adıdır. Gıda yapısı ve sindirim kinetiği bir mühendislik disiplini olarak ele alınır: matriksler tanımlı bir yanıt için kurulur ve sıralanır; her formül viskozite, besin yoğunluğu ve öğün sonrası davranış açısından haritalanır.",al_l:"Çatı kuruluş",al_b:"Tüm ürünlerin ve gelecekteki mal ve hizmetlerin çatısı. Alimentarus, BIOMIKS’i iki dala taşır: insan beslenmesi ve hayvan metabolizması.",nu_l:"İnsan beslenmesi · 2015’ten beri",nu_b:"Sinyal temelli beslenme. 2015’te Nutradyne adıyla başlayan tüketici markası; ürün hatları sinyal çerçevesine göre tasarlandı.",xo_l:"Hayvan metabolizması",xo_b:"Evcil hayvanlardan (Xooform Performa) yarış atlarına, hayvan metabolizması için sinyal temelli beslenme.",cap_bottle:"“Hiçbir şeyi tedavi etmiyor. Sadece çok net bir mesaj gönderiyor.”",cap_horse:"“Daha hızlı değil. Metabolik olarak kabul edilebilir.”",g_note:"GiNOVA Labs’te üretken araçlarla oluşturulmuş konsept görseller. Modeller gerçek kişiler değildir.",b_fine:"Ar-Ge konseptleri. Doğrulanmış ürün etkinliği iddiası taşımaz.",
+fl_eyebrow:"Filmler",fl_title:"Nutradina ekranda.",fl_body:"GiNOVA Labs’ten üç reklam konsepti: satranç, futbol ve sinematik bir BIOFORCE senaryosu.",fl_1w:"Satranç",fl_2w:"Futbol",fl_3w:"Sinematik konsept",fl_note:"Yaratıcı konsept filmler. Görsel efektler ürün performansını değil, kurgusal sonuçları gösterir.",
+so_eyebrow:"Ses",so_body:"GiNOVA Labs SoundLab’den, markalar ve filmler için yazılmış özgün müzik.",
+w_eyebrow:"Yazılar",w_title:"Denemeler.",w_body:"Medium’da, İngilizce ve Türkçe.",g1:"Sinyal olarak gıda",g2:"Güç olarak gıda",g3:"Ortak olarak makineler",g4:"Diğerleri",
+pr_eyebrow:"Basın kiti",pr_title:"Kopyalanmaya hazır biyografiler.",pr_body:"İngilizce, Türkçe ve İtalyanca.",bio_one:"Tek satır",bio_short:"Kısa",bio_long:"Uzun",copy:"Kopyala",copied:"Kopyalandı",copyfail:"Metni seçin",ft_contact:"Proje talepleri"},
+
+it:{nav_founder:"Fondatore",nav_studio:"Studio",nav_research:"Ricerca",nav_brands:"Marchi",nav_films:"Film",nav_sound:"Suono",nav_writing:"Scritti",nav_press:"Stampa",
+hero_eyebrow:"Direttore fondatore · GiNOVA",hero_lede:"Quindici anni nell’industria alimentare, quindici nell’informatica. Lavoro dove si incontrano scienza degli alimenti, intelligenza artificiale e strategia. La mia tesi è breve: <em>il cibo è codice</em>.",cta_research:"Scopri la ricerca",cta_films:"Guarda i film",
+cap_founder:"“Un lungo, per favore. Le calorie le tenga pure: io conto i segnali.”",mq_code:"Il cibo è codice",mq_signal:"Segnale, non substrato",
+f_eyebrow:"Il fondatore",f_title:"Un ingegnere che legge il cibo come codice.",f_body:"Formatosi come ingegnere alimentare al METU, Kunter ha trascorso quindici anni nell’industria alimentare e altri quindici nell’informatica. Nato a İzmir, di casa ad Ankara, di recente un anno a Napoli. Ha fondato GiNOVA per dare alle decisioni difficili il rigore dell’ingegneria e la velocità dell’IA generativa.",
+comp_title:"Composizione",comp_serving:"Porzione",comp_serving_v:"1 fondatore",comp_food:"Industria alimentare",comp_it:"Informatica",comp_years:"15 anni",comp_degree:"Laurea in Ingegneria alimentare",comp_degree_v:"METU",comp_origin:"Origine",comp_origin_v:"İzmir",comp_base:"Base",comp_base_v:"Ankara · Napoli ’25",comp_lang:"Lingue",comp_note:"Contiene: ingegneria di processo, decision brief, scrittura lunga. Può contenere opinioni forti sulla scienza della nutrizione.",
+s_eyebrow:"Lo studio",s_title:"Domande difficili, trasformate in decisioni.",s_body:"GiNOVA applica l’intelligenza generativa a problemi aziendali complessi, con una velocità e un prezzo che rendono la decisione più preziosa della consulenza. Ogni incarico inizia con un passo piccolo, retribuito e ben definito.",cap_marble:"“L’abbiamo fatto scolpire nel marmo. Le slide sembravano provvisorie.”",
+d1_t:"Ingegneria",d1_b:"Domande su prodotto, processo e investimento: capacità, impianti e come dovrebbe davvero funzionare una linea.",d1_e:"Si parte da una consulenza tecnica circoscritta",d2_t:"Consulenza",d2_b:"IA generativa d’impresa e reportistica per il consiglio, costruite perché il vertice possa agire.",d2_e:"Si parte da una diagnosi a pagamento e un Decision Brief",d3_b:"Suono, film e storie di marca, realizzati con gli stessi strumenti su cui la consulenza dà indicazioni.",d3_e:"Si parte da una commissione audio o video",
+r_eyebrow:"La ricerca",r_with:"Un programma di ricerca con il Prof. Dr. Fatih Yıldız, METU",r_body1:"Lo stesso pasto non produce lo stesso risultato metabolico in ogni persona, né nella stessa persona in giorni diversi. I nutrienti agiscono come segnali che il corpo valuta nel contesto: fase circadiana, stato infiammatorio e storia metabolica decidono quali vie si attivano.",r_body2:"Se i nutrienti sono segnali, il cibo può essere progettato per la risposta che deve innescare.",
+p_amp:"ampiezza",p_thr:"soglia",p_rise:"tempo di salita",p_decay:"tempo di decadimento",p_dur:"durata sopra soglia",p_ref:"periodo refrattario",
+lab_title:"Laboratorio del segnale",lab_body:"Muovi i cursori. Un segnale nutritivo innesca una risposta solo finché resta sopra la soglia del corpo. Passa a un adulto anziano e guarda lo stesso input faticare a superarla.",lab_young:"Giovane adulto",lab_old:"Adulto anziano",lab_peak:"Picco",lab_tpeak:"Tempo al picco",lab_above:"Tempo sopra soglia",lab_admit:"Segnale ammesso",lab_yes:"Sì",lab_no:"No",lab_min:"min",lab_note:"Modello illustrativo in unità arbitrarie. Non è un consiglio alimentare.",lab_axis:"minuti dopo il pasto",lab_thr_label:"soglia",cap_lab:"“Stesso pranzo, tesoro. Segnale completamente diverso.”",
+pp_theory:"Teoria",pp_method:"Metodo",pp_gov:"Governance",p1_b:"Perché input nutrizionali identici danno esiti divergenti? Una lettura della risposta ai nutrienti secondo la teoria del controllo.",p1_s:"Preparato per Trends in Endocrinology &amp; Metabolism",p2_b:"Progettare prodotti per esiti metabolici definiti: un vocabolario del segnale, il Synergistic Signal Index (SSI) e l’architettura della matrice come leva di progetto.",p2_s:"Inviato al Journal of Food Science · revisione in ripresa",p3_b:"Quando un claim su un alimento funzionale è valido? Una soglia minima di prova: contesto, affidabilità tra condizioni, modalità di fallimento dichiarate.",p3_s:"Pronto per l’invio",
+lg_eyebrow:"Longevità",lg_title:"L’invecchiamento come spostamento dell’ammissibilità metabolica.",lg_body:"Gli adulti anziani rispondono meno allo stesso input nutritivo anche quando l’apporto è intatto. La visione mOS lo legge come un cambiamento delle condizioni in cui il corpo accetta un segnale, non come una semplice perdita di capacità. È nella longevità che il quadro del segnale conta di più.",lg_s:"Abstract per convegno · 2026 · con il Prof. Dr. Fatih Yıldız",
+bk_eyebrow:"Libro in lavorazione · in turco",bk_body:"Dal substrato al segnale: la nutrizione sotto un’architettura di controllo metabolico. Il racconto in forma di libro degli studi sul metabolismo dietro gli articoli, scritto con il Prof. Dr. Fatih Yıldız.",
+b_eyebrow:"I marchi",b_title:"Una teoria, una casa di marchi.",bm_l:"Il sistema nutrizionale",bm_b:"BIOMIKS è il nome del sistema stesso, non di un singolo prodotto. Struttura degli alimenti e cinetica digestiva diventano una disciplina ingegneristica: le matrici sono costruite e sequenziate per una risposta definita, e ogni formula è mappata per viscosità, densità nutritiva e comportamento postprandiale.",al_l:"L’organizzazione madre",al_b:"La madre di ogni prodotto, e dei beni e servizi che verranno. Alimentarus porta BIOMIKS in due rami: nutrizione umana e metabolismo animale.",nu_l:"Nutrizione umana · dal 2015",nu_b:"Nutrizione basata sul segnale. Il marchio di consumo, nato nel 2015 come Nutradyne, con linee di prodotto progettate attorno al quadro del segnale.",xo_l:"Metabolismo animale",xo_b:"Nutrizione basata sul segnale per il metabolismo animale, dagli animali da compagnia (Xooform Performa) ai cavalli da corsa.",cap_bottle:"“Non cura niente. Manda solo un messaggio molto chiaro.”",cap_horse:"“Non è più veloce. È metabolicamente ammissibile.”",g_note:"Immagini concettuali create con strumenti generativi da GiNOVA Labs. I modelli non sono persone reali.",b_fine:"Concept di R&amp;S. Non si dichiara alcuna efficacia validata del prodotto.",
+fl_eyebrow:"Film",fl_title:"Nutradina sullo schermo.",fl_body:"Tre concept pubblicitari di GiNOVA Labs: scacchi, calcio e uno scenario cinematografico BIOFORCE.",fl_1w:"Scacchi",fl_2w:"Calcio",fl_3w:"Concept cinematografico",fl_note:"Film di concept creativo. Gli effetti visivi rappresentano esiti immaginari, non prestazioni del prodotto.",
+so_eyebrow:"Suono",so_body:"Musica originale del SoundLab di GiNOVA Labs, scritta per i marchi e i film.",
+w_eyebrow:"Scritti",w_title:"Saggi.",w_body:"Su Medium, in inglese e in turco.",g1:"Il cibo come segnale",g2:"Il cibo come potere",g3:"Le macchine come collaboratrici",g4:"Altrove",
+pr_eyebrow:"Cartella stampa",pr_title:"Biografie pronte da copiare.",pr_body:"Disponibili in inglese, turco e italiano.",bio_one:"Una riga",bio_short:"Breve",bio_long:"Lunga",copy:"Copia",copied:"Copiato",copyfail:"Seleziona il testo",ft_contact:"Richieste di progetto"},
+
+de:{nav_founder:"Gründer",nav_studio:"Studio",nav_research:"Forschung",nav_brands:"Marken",nav_films:"Filme",nav_sound:"Klang",nav_writing:"Texte",nav_press:"Presse",
+hero_eyebrow:"Gründungsdirektor · GiNOVA",hero_lede:"Fünfzehn Jahre in der Lebensmittelindustrie, fünfzehn in der Informationstechnik. Ich arbeite dort, wo Lebensmittelwissenschaft, maschinelle Intelligenz und Strategie zusammenkommen. Meine These ist kurz: <em>Nahrung ist Code</em>.",cta_research:"Zur Forschung",cta_films:"Filme ansehen",
+cap_founder:"„Einen Lungo, bitte. Die Kalorien können Sie behalten, ich zähle Signale.“",mq_code:"Nahrung ist Code",mq_signal:"Signal, nicht Substrat",
+f_eyebrow:"Der Gründer",f_title:"Ein Ingenieur, der Nahrung wie Code liest.",f_body:"Als Lebensmittelingenieur an der METU ausgebildet, verbrachte Kunter fünfzehn Jahre in der Lebensmittelindustrie und weitere fünfzehn in der Informationstechnik. Geboren in İzmir, zu Hause in Ankara, zuletzt ein Jahr in Neapel. Er gründete GiNOVA, um schwierigen Entscheidungen die Strenge der Technik und das Tempo generativer KI zu geben.",
+comp_title:"Zusammensetzung",comp_serving:"Portion",comp_serving_v:"1 Gründer",comp_food:"Lebensmittelindustrie",comp_it:"Informationstechnik",comp_years:"15 J.",comp_degree:"B.Sc. Lebensmitteltechnik",comp_degree_v:"METU",comp_origin:"Herkunft",comp_origin_v:"İzmir",comp_base:"Basis",comp_base_v:"Ankara · Neapel ’25",comp_lang:"Sprachen",comp_note:"Enthält: Verfahrenstechnik, Entscheidungsvorlagen, lange Texte. Kann starke Meinungen zur Ernährungswissenschaft enthalten.",
+s_eyebrow:"Das Studio",s_title:"Schwierige Fragen, in Entscheidungen verwandelt.",s_body:"GiNOVA wendet generative Intelligenz auf komplexe Geschäftsprobleme an, so schnell und günstig, dass die Entscheidung mehr wert ist als die Beratung. Jedes Mandat beginnt mit einem kleinen, bezahlten, klar umrissenen Schritt.",cap_marble:"„Wir haben es in Marmor meißeln lassen. Folien wirkten so vorläufig.“",
+d1_t:"Engineering",d1_b:"Fragen zu Produkt, Prozess und Investition: Kapazität, Anlagen und wie eine Linie tatsächlich laufen sollte.",d1_e:"Beginnt mit einer klar umrissenen Ingenieurberatung",d2_t:"Beratung",d2_b:"Generative KI für Unternehmen und Vorstandsberichte, gebaut, damit die Führung handeln kann.",d2_e:"Beginnt mit einer bezahlten Diagnose und einem Decision Brief",d3_b:"Klang, Film und Markengeschichten, gemacht mit denselben Werkzeugen, zu denen die Beratung berät.",d3_e:"Beginnt mit einem Klang- oder Bewegtbildauftrag",
+r_eyebrow:"Die Forschung",r_with:"Ein Forschungsprogramm mit Prof. Dr. Fatih Yıldız, METU",r_body1:"Dieselbe Mahlzeit erzeugt nicht bei jedem Menschen dasselbe Stoffwechselergebnis, nicht einmal bei derselben Person an verschiedenen Tagen. Nährstoffe wirken als Signale, die der Körper im Kontext bewertet: Zirkadiane Phase, Entzündungsstatus und Stoffwechselgeschichte entscheiden, welche Signalwege laufen.",r_body2:"Wenn Nährstoffe Signale sind, lässt sich Nahrung auf die Reaktion hin entwickeln, die sie auslösen soll.",
+p_amp:"Amplitude",p_thr:"Schwelle",p_rise:"Anstiegszeit",p_decay:"Abklingzeit",p_dur:"Dauer über der Schwelle",p_ref:"Refraktärzeit",
+lab_title:"Signallabor",lab_body:"Bewegen Sie die Regler. Ein Nährstoffsignal löst nur so lange eine Reaktion aus, wie es über der Schwelle des Körpers bleibt. Wechseln Sie zu einem älteren Erwachsenen und sehen Sie, wie derselbe Input daran scheitert.",lab_young:"Junger Erwachsener",lab_old:"Älterer Erwachsener",lab_peak:"Spitze",lab_tpeak:"Zeit bis Spitze",lab_above:"Zeit über Schwelle",lab_admit:"Signal zugelassen",lab_yes:"Ja",lab_no:"Nein",lab_min:"Min.",lab_note:"Anschauungsmodell in willkürlichen Einheiten. Keine Ernährungsberatung.",lab_axis:"Minuten nach der Mahlzeit",lab_thr_label:"Schwelle",cap_lab:"„Gleiches Mittagessen, Liebling. Völlig anderes Signal.“",
+pp_theory:"Theorie",pp_method:"Methode",pp_gov:"Governance",p1_b:"Warum führen identische Nährstoffeinträge zu unterschiedlichen Ergebnissen? Eine regelungstheoretische Erklärung der Nährstoffantwort.",p1_s:"Vorbereitet für Trends in Endocrinology &amp; Metabolism",p2_b:"Produkte für definierte Stoffwechselergebnisse entwickeln: ein Signalvokabular, der Synergistic Signal Index (SSI) und die Matrixarchitektur als Gestaltungshebel.",p2_s:"Eingereicht beim Journal of Food Science · Überarbeitung wird fortgesetzt",p3_b:"Wann ist eine Aussage über funktionelle Lebensmittel gültig? Eine Mindestanforderung an Belege: Kontext, Verlässlichkeit unter Bedingungen, offengelegte Versagensfälle.",p3_s:"Einreichungsbereit",
+lg_eyebrow:"Langlebigkeit",lg_title:"Altern als Verschiebung der metabolischen Zulässigkeit.",lg_body:"Ältere Erwachsene reagieren schwächer auf denselben Nährstoffeintrag, selbst wenn die Zufuhr intakt ist. Die mOS-Sicht liest das als Änderung der Bedingungen, unter denen der Körper ein Signal annimmt, nicht als bloßen Kapazitätsverlust. Bei der Langlebigkeit zählt das Signalmodell am meisten.",lg_s:"Konferenz-Abstract · 2026 · mit Prof. Dr. Fatih Yıldız",
+bk_eyebrow:"Buch in Arbeit · auf Türkisch",bk_body:"Vom Substrat zum Signal: Ernährung unter einer metabolischen Steuerungsarchitektur. Die buchlange Darstellung der Stoffwechselstudien hinter den Aufsätzen, geschrieben mit Prof. Dr. Fatih Yıldız.",
+b_eyebrow:"Die Marken",b_title:"Eine Theorie, ein Haus der Marken.",bm_l:"Das Ernährungssystem",bm_b:"BIOMIKS ist der Name des Systems selbst, nicht eines einzelnen Produkts. Lebensmittelstruktur und Verdauungskinetik werden als Ingenieursdisziplin behandelt: Matrizes werden für eine definierte Antwort aufgebaut und sequenziert, jede Formel wird nach Viskosität, Nährstoffdichte und postprandialem Verhalten kartiert.",al_l:"Die Dachorganisation",al_b:"Die Mutter aller Produkte und der kommenden Waren und Dienstleistungen. Alimentarus trägt BIOMIKS in zwei Zweige: menschliche Ernährung und Tierstoffwechsel.",nu_l:"Menschliche Ernährung · seit 2015",nu_b:"Signalbasierte Ernährung. Die Verbrauchermarke, 2015 als Nutradyne gestartet, mit Produktlinien rund um das Signalmodell.",xo_l:"Tierstoffwechsel",xo_b:"Signalbasierte Ernährung für den Tierstoffwechsel, von Haustieren (Xooform Performa) bis zu Rennpferden.",cap_bottle:"„Es heilt gar nichts. Es sendet nur eine sehr klare Botschaft.“",cap_horse:"„Er ist nicht schneller. Er ist metabolisch zulässig.“",g_note:"Konzeptbilder, erstellt mit generativen Werkzeugen bei GiNOVA Labs. Die Models sind keine realen Personen.",b_fine:"F&amp;E-Konzepte. Es wird keine validierte Produktwirksamkeit behauptet.",
+fl_eyebrow:"Filme",fl_title:"Nutradina auf der Leinwand.",fl_body:"Drei Werbekonzepte von GiNOVA Labs: Schach, Fußball und ein filmisches BIOFORCE-Szenario.",fl_1w:"Schach",fl_2w:"Fußball",fl_3w:"Filmisches Konzept",fl_note:"Kreative Konzeptfilme. Visuelle Effekte zeigen erdachte Ergebnisse, keine Produktleistung.",
+so_eyebrow:"Klang",so_body:"Originalmusik aus dem SoundLab von GiNOVA Labs, geschrieben für die Marken und die Filme.",
+w_eyebrow:"Texte",w_title:"Essays.",w_body:"Auf Medium, auf Englisch und Türkisch.",g1:"Nahrung als Signal",g2:"Nahrung als Macht",g3:"Maschinen als Mitarbeiter",g4:"Anderswo",
+pr_eyebrow:"Pressemappe",pr_title:"Kurzbiografien zum Kopieren.",pr_body:"Verfügbar auf Englisch, Türkisch und Italienisch.",bio_one:"Eine Zeile",bio_short:"Kurz",bio_long:"Lang",copy:"Kopieren",copied:"Kopiert",copyfail:"Text markieren",ft_contact:"Projektanfragen"},
+
+ar:{nav_founder:"المؤسس",nav_studio:"الاستوديو",nav_research:"البحث",nav_brands:"العلامات",nav_films:"الأفلام",nav_sound:"الصوت",nav_writing:"الكتابات",nav_press:"الصحافة",
+hero_eyebrow:"المدير المؤسس · GiNOVA",hero_lede:"خمسة عشر عامًا في صناعة الغذاء، وخمسة عشر في تقنية المعلومات. أعمل حيث يلتقي علم الغذاء والذكاء الآلي والاستراتيجية. أطروحتي قصيرة: <em>الغذاء شيفرة</em>.",cta_research:"استكشف البحث",cta_films:"شاهد الأفلام",
+cap_founder:"«قهوة لونغو من فضلك. واحتفظ بالسعرات؛ أنا أعدّ الإشارات.»",mq_code:"الغذاء شيفرة",mq_signal:"إشارة لا ركيزة",
+f_eyebrow:"المؤسس",f_title:"مهندس يقرأ الغذاء كما تُقرأ الشيفرة.",f_body:"تخرّج كونتر مهندسًا غذائيًا في جامعة الشرق الأوسط التقنية (METU)، وأمضى خمسة عشر عامًا في صناعة الغذاء وخمسة عشر أخرى في تقنية المعلومات. وُلد في إزمير، ويعيش في أنقرة، وقضى مؤخرًا عامًا في نابولي. أسّس GiNOVA ليمنح القرارات الصعبة دقة الهندسة وسرعة الذكاء الاصطناعي التوليدي.",
+comp_title:"التركيب",comp_serving:"الحصة",comp_serving_v:"مؤسس واحد",comp_food:"صناعة الغذاء",comp_it:"تقنية المعلومات",comp_years:"15 سنة",comp_degree:"بكالوريوس هندسة الأغذية",comp_degree_v:"METU",comp_origin:"المنشأ",comp_origin_v:"إزمير",comp_base:"الإقامة",comp_base_v:"أنقرة · نابولي 2025",comp_lang:"اللغات",comp_note:"يحتوي على: هندسة العمليات، وموجزات القرار، وكتابة مطوّلة. قد يحتوي على آراء قوية في علم التغذية.",
+s_eyebrow:"الاستوديو",s_title:"أسئلة صعبة تتحوّل إلى قرارات.",s_body:"تطبّق GiNOVA الذكاء التوليدي على مشكلات الأعمال المعقّدة، بسرعة وسعر يجعلان قيمة القرار أكبر من قيمة الاستشارة. يبدأ كل تعاقد بخطوة صغيرة مدفوعة واضحة النطاق.",cap_marble:"«نقشناه على الرخام. العروض التقديمية بدت مؤقتة.»",
+d1_t:"الهندسة",d1_b:"أسئلة المنتج والعملية والاستثمار: الطاقة الإنتاجية والمعدات وكيف ينبغي أن يعمل خط الإنتاج فعلًا.",d1_e:"تبدأ باستشارة هندسية محددة النطاق",d2_t:"الاستشارات",d2_b:"ذكاء اصطناعي توليدي للمؤسسات وتقارير لمجالس الإدارة، مصمَّمة لتتصرف القيادة بناءً عليها.",d2_e:"تبدأ بتشخيص مدفوع وموجز قرار",d3_b:"صوت وأفلام وقصص علامات تجارية، تُصنع بالأدوات نفسها التي تنصح بها الاستشارات.",d3_e:"تبدأ بتكليف صوتي أو مرئي",
+r_eyebrow:"البحث",r_with:"برنامج بحثي مع الأستاذ الدكتور فاتح يلدز، METU",r_body1:"الوجبة نفسها لا تُحدث النتيجة الأيضية نفسها لدى كل شخص، ولا حتى لدى الشخص نفسه في أيام مختلفة. تعمل المغذيات كإشارات يقيّمها الجسم في سياقها: فالطور اليوماوي والحالة الالتهابية والتاريخ الأيضي تحدد أي المسارات تعمل.",r_body2:"إذا كانت المغذيات إشارات، فيمكن هندسة الغذاء وفق الاستجابة التي ينبغي أن يحفّزها.",
+p_amp:"السعة",p_thr:"العتبة",p_rise:"زمن الصعود",p_decay:"زمن الاضمحلال",p_dur:"المدة فوق العتبة",p_ref:"فترة الحران",
+lab_title:"مختبر الإشارة",lab_body:"حرّك المؤشرات. لا تُطلق إشارة المغذّي استجابةً إلا ما دامت فوق عتبة الجسم. انتقل إلى شخص مسنّ وشاهد المدخل نفسه يتعثّر في تجاوزها.",lab_young:"بالغ شاب",lab_old:"بالغ مسنّ",lab_peak:"الذروة",lab_tpeak:"زمن الوصول للذروة",lab_above:"الزمن فوق العتبة",lab_admit:"قُبلت الإشارة",lab_yes:"نعم",lab_no:"لا",lab_min:"د",lab_note:"نموذج توضيحي بوحدات اعتباطية. ليس نصيحة غذائية.",lab_axis:"دقائق بعد الوجبة",lab_thr_label:"العتبة",cap_lab:"«الغداء نفسه يا عزيزتي، لكن الإشارة مختلفة تمامًا.»",
+pp_theory:"النظرية",pp_method:"المنهج",pp_gov:"الحوكمة",p1_b:"لماذا تؤدي المدخلات الغذائية المتطابقة إلى نتائج متباينة؟ تفسير لاستجابة المغذيات من منظور نظرية التحكم.",p1_s:"أُعدّ لمجلة Trends in Endocrinology &amp; Metabolism",p2_b:"تصميم منتجات لنتائج أيضية محددة: مفردات للإشارة، ومؤشر الإشارة التآزرية (SSI)، وبنية المصفوفة أداةً للتصميم.",p2_s:"قُدّم إلى Journal of Food Science · المراجعة تُستأنف",p3_b:"متى يكون ادعاء الغذاء الوظيفي صحيحًا؟ حدّ أدنى للإثبات: السياق، والموثوقية عبر الظروف، والإفصاح عن حالات الإخفاق.",p3_s:"جاهز للتقديم",
+lg_eyebrow:"طول العمر",lg_title:"الشيخوخة بوصفها تحوّلًا في المقبولية الأيضية.",lg_body:"يستجيب كبار السن أقل للمُدخل الغذائي نفسه حتى مع سلامة الإيصال. ترى مقاربة mOS ذلك تغيّرًا في الشروط التي يقبل الجسم بموجبها الإشارة، لا مجرد فقدان للقدرة. وفي طول العمر تكتسب مقاربة الإشارة أهميتها القصوى.",lg_s:"ملخص مؤتمر · 2026 · مع الأستاذ الدكتور فاتح يلدز",
+bk_eyebrow:"كتاب قيد الإعداد · بالتركية",bk_body:"من الركيزة إلى الإشارة: التغذية في ظل بنية تحكّم أيضي. عرض بطول كتاب لدراسات الأيض التي تقوم عليها الأوراق البحثية، كُتب مع الأستاذ الدكتور فاتح يلدز.",
+b_eyebrow:"العلامات",b_title:"نظرية واحدة، وبيت من العلامات.",bm_l:"منظومة التغذية",bm_b:"BIOMIKS اسم المنظومة نفسها لا منتج بعينه. تُعامل بنية الغذاء وحركية الهضم كتخصص هندسي: تُبنى المصفوفات وتُرتّب لاستجابة محددة، وتُرسم لكل تركيبة خريطة للّزوجة وكثافة المغذيات والسلوك بعد الوجبة.",al_l:"المنظمة الأم",al_b:"الأم لكل منتج، وللسلع والخدمات القادمة. تحمل Alimentarus منظومة BIOMIKS إلى فرعين: تغذية الإنسان وأيض الحيوان.",nu_l:"تغذية الإنسان · منذ 2015",nu_b:"تغذية قائمة على الإشارة. العلامة الاستهلاكية التي بدأت عام 2015 باسم Nutradyne، بخطوط منتجات مصمَّمة حول إطار الإشارة.",xo_l:"أيض الحيوان",xo_b:"تغذية قائمة على الإشارة لأيض الحيوان، من الحيوانات الأليفة (Xooform Performa) إلى خيول السباق.",cap_bottle:"«إنه لا يعالج شيئًا. إنه يرسل رسالة واضحة جدًا فحسب.»",cap_horse:"«ليس أسرع. إنه مقبول أيضيًا.»",g_note:"صور مفاهيمية أُنشئت بأدوات توليدية في GiNOVA Labs. الشخصيات ليست أشخاصًا حقيقيين.",b_fine:"مفاهيم بحث وتطوير. لا يُدّعى أي فعالية مثبتة للمنتج.",
+fl_eyebrow:"الأفلام",fl_title:"Nutradina على الشاشة.",fl_body:"ثلاثة مفاهيم إعلانية من GiNOVA Labs: الشطرنج وكرة القدم وسيناريو سينمائي لـ BIOFORCE.",fl_1w:"الشطرنج",fl_2w:"كرة القدم",fl_3w:"مفهوم سينمائي",fl_note:"أفلام مفاهيمية إبداعية. تُصوّر المؤثرات نتائج متخيّلة لا أداء المنتج.",
+so_eyebrow:"الصوت",so_body:"موسيقى أصلية من SoundLab في GiNOVA Labs، كُتبت للعلامات والأفلام.",
+w_eyebrow:"الكتابات",w_title:"مقالات.",w_body:"على Medium، بالإنجليزية والتركية.",g1:"الغذاء إشارةً",g2:"الغذاء قوةً",g3:"الآلات شريكةً",g4:"في مواضع أخرى",
+pr_eyebrow:"الملف الصحفي",pr_title:"سير ذاتية جاهزة للنسخ.",pr_body:"متاحة بالإنجليزية والتركية والإيطالية.",bio_one:"سطر واحد",bio_short:"قصيرة",bio_long:"طويلة",copy:"نسخ",copied:"تم النسخ",copyfail:"حدّد النص",ft_contact:"استفسارات المشاريع",native:"كونتر إيلالان"},
+
+ja:{nav_founder:"創業者",nav_studio:"スタジオ",nav_research:"研究",nav_brands:"ブランド",nav_films:"映像",nav_sound:"音楽",nav_writing:"執筆",nav_press:"プレス",
+hero_eyebrow:"創業ディレクター · GiNOVA",hero_lede:"食品産業で十五年、情報技術で十五年。食品科学、機械知能、戦略が交わる場所で仕事をしています。私の命題は短い。<em>食はコードである</em>。",cta_research:"研究を見る",cta_films:"映像を見る",
+cap_founder:"「ルンゴをひとつ。カロリーは結構、私は信号を数えているので。」",mq_code:"食はコード",mq_signal:"基質ではなく信号",
+f_eyebrow:"創業者",f_title:"食をコードのように読むエンジニア。",f_body:"中東工科大学（METU）で食品工学を修めたクンテルは、食品産業で十五年、情報技術でさらに十五年を過ごしました。イズミル生まれ、アンカラ在住、最近はナポリで一年を過ごしました。難しい意思決定に工学の厳密さと生成AIの速さをもたらすため、GiNOVAを創業しました。",
+comp_title:"成分表示",comp_serving:"内容量",comp_serving_v:"創業者1名",comp_food:"食品産業",comp_it:"情報技術",comp_years:"15年",comp_degree:"食品工学学士",comp_degree_v:"METU",comp_origin:"出身",comp_origin_v:"イズミル",comp_base:"拠点",comp_base_v:"アンカラ · ナポリ ’25",comp_lang:"言語",comp_note:"原材料：プロセス工学、意思決定ブリーフ、長文の執筆。栄養科学に関する強い意見を含む場合があります。",
+s_eyebrow:"スタジオ",s_title:"難問を、決断へ。",s_body:"GiNOVAは複雑な経営課題に生成知能を適用します。助言の費用を上回る価値を意思決定にもたらす速さと価格で。すべての案件は、小さく、有償で、範囲の明確な一歩から始まります。",cap_marble:"「大理石に刻みました。スライドでは心もとなくて。」",
+d1_t:"エンジニアリング",d1_b:"製品・工程・投資の問い。能力、設備、そしてラインが本来どう動くべきか。",d1_e:"範囲を定めた技術相談から",d2_t:"コンサルティング",d2_b:"企業向け生成AIと取締役会報告。経営陣が動ける形で。",d2_e:"有償診断と意思決定ブリーフから",d3_b:"コンサルティングが勧めるのと同じ道具で作る、音・映像・ブランドの物語。",d3_e:"音または映像の制作依頼から",
+r_eyebrow:"研究",r_with:"中東工科大学 ファティ・ユルドゥズ教授との研究プログラム",r_body1:"同じ食事でも、人によって、さらには同じ人でも日によって、代謝の結果は同じになりません。栄養素は、身体が文脈の中で評価する信号として働きます。どの経路が動くかを決めるのは、概日リズムの位相、炎症状態、そして代謝の履歴です。",r_body2:"栄養素が信号なら、食品は引き起こすべき応答に合わせて設計できる。",
+p_amp:"振幅",p_thr:"閾値",p_rise:"立ち上がり時間",p_decay:"減衰時間",p_dur:"閾値超過時間",p_ref:"不応期",
+lab_title:"シグナル・ラボ",lab_body:"スライダーを動かしてみてください。栄養の信号は、身体の閾値を超えている間だけ応答を引き起こします。高齢者に切り替えると、同じ入力が閾値を越えにくくなる様子が見えます。",lab_young:"若年成人",lab_old:"高齢者",lab_peak:"ピーク",lab_tpeak:"ピーク到達時間",lab_above:"閾値超過時間",lab_admit:"信号の受理",lab_yes:"はい",lab_no:"いいえ",lab_min:"分",lab_note:"任意単位による説明用モデルです。食事指導ではありません。",lab_axis:"食後の経過時間（分）",lab_thr_label:"閾値",cap_lab:"「同じランチよ、あなた。でも信号はまるで別物。」",
+pp_theory:"理論",pp_method:"方法",pp_gov:"ガバナンス",p1_b:"同じ栄養入力が、なぜ異なる結果を生むのか。制御理論による栄養応答の説明。",p1_s:"Trends in Endocrinology &amp; Metabolism 向けに準備",p2_b:"定められた代謝結果のための製品設計。信号の語彙、相乗シグナル指数（SSI）、設計の梃子としてのマトリクス構造。",p2_s:"Journal of Food Science に投稿 · 改訂を再開予定",p3_b:"機能性食品の表示はいつ妥当か。最低限の立証基準：文脈、条件をまたぐ信頼性、失敗条件の開示。",p3_s:"投稿準備完了",
+lg_eyebrow:"長寿",lg_title:"代謝的許容性の変化としての老化。",lg_body:"高齢者は、栄養の供給が保たれていても同じ入力への応答が弱くなります。mOSの視点はこれを単なる能力の低下ではなく、身体が信号を受け入れる条件の変化として読みます。信号の枠組みが最も意味を持つのは長寿の領域です。",lg_s:"学会抄録 · 2026 · ファティ・ユルドゥズ教授と共著",
+bk_eyebrow:"執筆中の書籍 · トルコ語",bk_body:"基質から信号へ：代謝制御アーキテクチャのもとでの栄養。論文の背後にある代謝研究を一冊にまとめたもの。ファティ・ユルドゥズ教授と共著。",
+b_eyebrow:"ブランド",b_title:"ひとつの理論、ひとつのブランドの家。",bm_l:"栄養システム",bm_b:"BIOMIKSは単一の製品ではなく、システムそのものの名前です。食品の構造と消化の動態を工学として扱い、マトリクスを定めた応答のために組み立て、順序づけ、すべての処方を粘度・栄養密度・食後の挙動でマッピングします。",al_l:"母体組織",al_b:"すべての製品と、これから生まれる商品・サービスの母体。AlimentarusはBIOMIKSを二つの枝へ運びます。人の栄養と動物の代謝です。",nu_l:"人の栄養 · 2015年から",nu_b:"信号に基づく栄養。2015年にNutradyneとして始まった消費者ブランドで、製品ラインは信号の枠組みに沿って設計されています。",xo_l:"動物の代謝",xo_b:"伴侶動物（Xooform Performa）から競走馬まで、動物の代謝のための信号ベースの栄養。",cap_bottle:"「何も治しません。ただ、とても明確なメッセージを送るだけです。」",cap_horse:"「速くなったわけではない。代謝的に許容されただけだ。」",g_note:"GiNOVA Labsが生成ツールで制作したコンセプト画像です。人物は実在しません。",b_fine:"研究開発中のコンセプトです。製品の有効性を検証済みとする主張は行いません。",
+fl_eyebrow:"映像",fl_title:"スクリーンの中のNutradina。",fl_body:"GiNOVA Labsによる三つのCMコンセプト。チェス、サッカー、そして映画的なBIOFORCEのシナリオ。",fl_1w:"チェス",fl_2w:"サッカー",fl_3w:"シネマティック・コンセプト",fl_note:"クリエイティブなコンセプト映像です。視覚効果は想像上の結果を描いたもので、製品の性能ではありません。",
+so_eyebrow:"音楽",so_body:"GiNOVA LabsのSoundLabによるオリジナル音楽。ブランドと映像のために書かれました。",
+w_eyebrow:"執筆",w_title:"エッセイ。",w_body:"Mediumにて、英語とトルコ語で。",g1:"信号としての食",g2:"力としての食",g3:"協働者としての機械",g4:"その他",
+pr_eyebrow:"プレスキット",pr_title:"そのまま使えるプロフィール。",pr_body:"英語・トルコ語・イタリア語で用意しています。",bio_one:"一行",bio_short:"短文",bio_long:"長文",copy:"コピー",copied:"コピーしました",copyfail:"テキストを選択",ft_contact:"ご相談窓口",native:"クンテル・イララン"}
+};
+var FONTS={ar:"https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap",
+ja:"https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"};
+var loaded={};
+var cur="en";
+function t(k){var d=I18N[cur]||I18N.en; return (d[k]!=null?d[k]:I18N.en[k]);}
+function applyLang(l){
+  if(!I18N[l]) l="en"; cur=l;
+  if(FONTS[l] && !loaded[l]){var link=document.createElement("link"); link.rel="stylesheet"; link.href=FONTS[l]; document.head.appendChild(link); loaded[l]=1;}
+  root.lang=l; root.dir=(l==="ar")?"rtl":"ltr";
+  document.querySelectorAll("[data-i18n]").forEach(function(el){var v=t(el.getAttribute("data-i18n")); if(v!=null) el.innerHTML=v;});
+  document.getElementById("native").textContent=t("native")||"";
+  document.getElementById("lang").value=l;
+  try{localStorage.setItem("ki-lang",l);}catch(e){}
+  drawLab();
+}
+document.getElementById("lang").addEventListener("change",function(e){applyLang(e.target.value);});
+
+/* ---------- name letters ---------- */
+document.querySelectorAll(".name .w").forEach(function(w,wi){
+  var star=w.querySelector(".star"); var txt=w.firstChild.nodeValue; w.firstChild.remove();
+  var frag=document.createDocumentFragment();
+  for(var i=0;i<txt.length;i++){var s=document.createElement("span"); s.className="ch"; s.style.setProperty("--i", i + wi*6); s.textContent=txt[i]; frag.appendChild(s);}
+  w.insertBefore(frag, star||null);
+});
+
+/* ---------- ink drawing lengths + reveal ---------- */
+document.querySelectorAll(".ink.draw").forEach(function(svg){
+  svg.querySelectorAll("path,ellipse,circle,line,rect").forEach(function(p){try{var L=Math.ceil(p.getTotalLength())+2; p.style.setProperty("--len",L);}catch(e){}});
+});
+var io=("IntersectionObserver" in window)? new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in"); io.unobserve(e.target);}});},{rootMargin:"0px 0px -8% 0px",threshold:.08}) : null;
+document.querySelectorAll(".rv,.ink.draw").forEach(function(el){ if(io) io.observe(el); else el.classList.add("in"); });
+setTimeout(function(){document.querySelectorAll(".hero .ink.draw").forEach(function(el){el.classList.add("in");});},700);
+
+/* ---------- progress + nav ---------- */
+var prog=document.getElementById("progress"), nav=document.getElementById("nav");
+function onScroll(){var h=document.documentElement; var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1); prog.style.transform="scaleX("+p.toFixed(4)+")"; nav.classList.toggle("scrolled",h.scrollTop>10);}
+window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+/* ---------- hero parallax ---------- */
+var frame=document.getElementById("frame");
+if(!reduce && window.matchMedia("(pointer:fine)").matches){
+  document.querySelector(".hero").addEventListener("pointermove",function(e){var r=this.getBoundingClientRect(); var x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5; frame.style.transform="rotate("+(-2.2+x*3).toFixed(2)+"deg) translate("+(x*14).toFixed(1)+"px,"+(y*10).toFixed(1)+"px)";});
+  document.querySelector(".hero").addEventListener("pointerleave",function(){frame.style.transform="";});
+}
+
+/* ---------- hero waves ---------- */
+var wc=document.getElementById("waves"), wx=wc.getContext("2d"), wt=0, wRun=true;
+function sizeCanvas(c){var r=c.getBoundingClientRect(), d=Math.min(window.devicePixelRatio||1,2); c.width=Math.max(1,Math.round(r.width*d)); c.height=Math.max(1,Math.round(r.height*d)); return d;}
+var wd=sizeCanvas(wc);
+function waves(){
+  var W=wc.width,H=wc.height; wx.clearRect(0,0,W,H);
+  for(var k=0;k<6;k++){
+    wx.beginPath();
+    var base=H*(.35+k*.09), amp=H*(.035+k*.008), f=(1.2+k*.35)/W*Math.PI*2;
+    for(var x=0;x<=W;x+=6*wd){var y=base+Math.sin(x*f+wt*(.6+k*.12)+k)*amp+Math.sin(x*f*2.3-wt*.4)*amp*.35; if(x===0)wx.moveTo(x,y); else wx.lineTo(x,y);}
+    wx.strokeStyle=k===2?"rgba(14,159,171,.28)":(k===4?"rgba(227,160,8,.22)":"rgba(11,26,51,.06)"); wx.lineWidth=(k===2||k===4?1.4:1)*wd; wx.stroke();
+  }
+  wt+=.012; if(wRun && !reduce) requestAnimationFrame(waves);
+}
+waves();
+if("IntersectionObserver" in window){new IntersectionObserver(function(es){var v=es[0].isIntersecting; if(v&&!wRun){wRun=true; waves();} wRun=v;}).observe(wc);}
+
+/* ---------- signal lab ---------- */
+var lab=document.getElementById("lab"), lx=lab.getContext("2d"), ld=sizeCanvas(lab);
+var ctxOld=false;
+function $(id){return document.getElementById(id);}
+function model(){
+  var A=+$("amp").value, thr=+$("thr").value, tr=+$("rise").value, td=+$("decay").value;
+  if(td<=tr+2) td=tr+3;
+  var eff=ctxOld? Math.min(.98, thr*1.55) : thr;
+  var Aeff=ctxOld? A*.88 : A;
+  var tp=(tr*td/(td-tr))*Math.log(td/tr);
+  var norm=Math.exp(-tp/td)-Math.exp(-tp/tr);
+  function s(t){return Aeff*(Math.exp(-t/td)-Math.exp(-t/tr))/norm;}
+  var above=0; for(var t=0;t<=240;t+=.5){ if(s(t)>=eff) above+=.5; }
+  return {A:A,thr:thr,eff:eff,tr:tr,td:td,tp:tp,peak:Aeff,s:s,above:above};
+}
+function drawLab(){
+  var m=model(), W=lab.width, H=lab.height, d=ld;
+  var padL=44*d, padR=14*d, padT=16*d, padB=40*d, pw=W-padL-padR, ph=H-padT-padB;
+  function X(t){return padL+t/240*pw;} function Y(v){return padT+(1-v)*ph;}
+  lx.clearRect(0,0,W,H);
+  var mono=getComputedStyle(root).getPropertyValue("--mono")||"monospace";
+  lx.font=(11*d)+"px "+mono; lx.fillStyle="#4A5670"; lx.strokeStyle="#E3E6EC"; lx.lineWidth=1*d;
+  for(var g=0;g<=240;g+=60){lx.beginPath(); lx.moveTo(X(g),padT); lx.lineTo(X(g),padT+ph); lx.stroke(); lx.textAlign="center"; lx.fillText(String(g),X(g),padT+ph+16*d);}
+  for(var v=0;v<=1.0001;v+=.25){lx.beginPath(); lx.moveTo(padL,Y(v)); lx.lineTo(padL+pw,Y(v)); lx.stroke(); lx.textAlign="right"; lx.fillText(v.toFixed(2),padL-8*d,Y(v)+4*d);}
+  lx.textAlign="center"; lx.fillText(t("lab_axis"),padL+pw/2,H-6*d);
+  // area above threshold
+  lx.beginPath(); var started=false;
+  for(var tt=0;tt<=240;tt+=1){var y=m.s(tt); var yy=Math.max(y,m.eff); if(!started){lx.moveTo(X(tt),Y(m.eff)); started=true;} lx.lineTo(X(tt),Y(yy));}
+  lx.lineTo(X(240),Y(m.eff)); lx.closePath(); lx.fillStyle="rgba(227,160,8,.28)"; lx.fill();
+  // curve
+  lx.beginPath(); for(var t2=0;t2<=240;t2+=1){var y2=m.s(t2); if(t2===0) lx.moveTo(X(t2),Y(y2)); else lx.lineTo(X(t2),Y(y2));}
+  lx.strokeStyle="#0B1A33"; lx.lineWidth=2.6*d; lx.lineJoin="round"; lx.stroke();
+  // threshold
+  lx.setLineDash([6*d,6*d]); lx.beginPath(); lx.moveTo(padL,Y(m.eff)); lx.lineTo(padL+pw,Y(m.eff)); lx.strokeStyle="#0E9FAB"; lx.lineWidth=1.6*d; lx.stroke(); lx.setLineDash([]);
+  lx.fillStyle="#0E9FAB"; lx.textAlign="right"; lx.fillText(t("lab_thr_label")+" "+m.eff.toFixed(2),padL+pw,Y(m.eff)-7*d);
+  if(ctxOld){lx.setLineDash([2*d,5*d]); lx.beginPath(); lx.moveTo(padL,Y(m.thr)); lx.lineTo(padL+pw,Y(m.thr)); lx.strokeStyle="rgba(14,159,171,.45)"; lx.lineWidth=1*d; lx.stroke(); lx.setLineDash([]);}
+  // peak dot
+  lx.beginPath(); lx.arc(X(m.tp),Y(m.peak),5*d,0,Math.PI*2); lx.fillStyle="#E3A008"; lx.fill(); lx.strokeStyle="#0B1A33"; lx.lineWidth=1.5*d; lx.stroke();
+  // readouts
+  var mn=t("lab_min");
+  $("o-amp").textContent=m.A.toFixed(2); $("o-thr").textContent=m.thr.toFixed(2); $("o-rise").textContent=m.tr+" "+mn; $("o-decay").textContent=m.td+" "+mn;
+  $("r-peak").textContent=m.peak.toFixed(2); $("r-tpeak").textContent=Math.round(m.tp)+" "+mn; $("r-above").textContent=Math.round(m.above)+" "+mn;
+  var ok=m.above>0; var ad=$("r-admit"); ad.textContent=ok?t("lab_yes"):t("lab_no"); ad.className=ok?"yes":"no";
+}
+["amp","thr","rise","decay"].forEach(function(id){$(id).addEventListener("input",drawLab);});
+function setCtx(old){ctxOld=old; $("ctx-young").setAttribute("aria-pressed",String(!old)); $("ctx-old").setAttribute("aria-pressed",String(old)); drawLab();}
+$("ctx-young").addEventListener("click",function(){setCtx(false);}); $("ctx-old").addEventListener("click",function(){setCtx(true);});
+var rT; window.addEventListener("resize",function(){clearTimeout(rT); rT=setTimeout(function(){wd=sizeCanvas(wc); ld=sizeCanvas(lab); drawLab(); vd=sizeCanvas(viz); if(reduce) waves();},120);});
+
+/* ---------- films ---------- */
+var film=$("film");
+document.querySelectorAll(".thumb").forEach(function(b){b.addEventListener("click",function(){
+  document.querySelectorAll(".thumb").forEach(function(x){x.setAttribute("aria-current","false");}); b.setAttribute("aria-current","true");
+  film.poster=b.dataset.poster; film.src=b.dataset.src; var p=film.play(); if(p&&p.catch) p.catch(function(){});
+});});
+
+/* ---------- records ---------- */
+var audio=$("audio"), deck=$("deck"), seek=$("seek"), viz=$("viz"), vx=viz.getContext("2d"), vd=sizeCanvas(viz), actx=null, an=null, data=null, curBtn=null;
+var PLAY='<svg viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg>', PAUSE='<svg viewBox="0 0 10 10"><rect x="2" y="1" width="2.2" height="8" fill="currentColor"/><rect x="5.8" y="1" width="2.2" height="8" fill="currentColor"/></svg>';
+function fmt(s){if(!isFinite(s)) return "0:00"; var m=Math.floor(s/60), r=Math.floor(s%60); return m+":"+(r<10?"0":"")+r;}
+function ensureAudioGraph(){ if(actx) return; try{ var AC=window.AudioContext||window.webkitAudioContext; actx=new AC(); var src=actx.createMediaElementSource(audio); an=actx.createAnalyser(); an.fftSize=128; data=new Uint8Array(an.frequencyBinCount); src.connect(an); an.connect(actx.destination);}catch(e){actx=null; an=null;} }
+function setIcons(){document.querySelectorAll("#tracks li").forEach(function(li){var b=li.querySelector("button"); var on=(b===curBtn)&&!audio.paused; li.classList.toggle("on",b===curBtn); b.querySelector(".ico").innerHTML=on?PAUSE:PLAY;}); deck.classList.toggle("playing",!audio.paused);}
+document.querySelectorAll("#tracks button").forEach(function(b){b.addEventListener("click",function(){
+  ensureAudioGraph(); if(actx && actx.state==="suspended") actx.resume();
+  if(curBtn===b){ if(audio.paused) audio.play(); else audio.pause(); return; }
+  curBtn=b; audio.src=b.dataset.src; var p=audio.play(); if(p&&p.catch) p.catch(function(){});
+});});
+audio.addEventListener("play",function(){setIcons(); vizLoop();}); audio.addEventListener("pause",setIcons); audio.addEventListener("ended",setIcons);
+audio.addEventListener("timeupdate",function(){ if(audio.duration){ seek.value=Math.round(audio.currentTime/audio.duration*1000); } $("t-cur").textContent=fmt(audio.currentTime); });
+audio.addEventListener("loadedmetadata",function(){$("t-dur").textContent=fmt(audio.duration);});
+seek.addEventListener("input",function(){ if(audio.duration) audio.currentTime=seek.value/1000*audio.duration; });
+function drawBars(arr){
+  var W=viz.width,H=viz.height,n=48,gap=3*vd,bw=(W-gap*(n-1))/n; vx.clearRect(0,0,W,H);
+  for(var i=0;i<n;i++){var v=arr?arr[i]:(.12+.1*Math.sin(i*.5)); var h=Math.max(2*vd,v*H); vx.fillStyle=i%7===3?"#E3A008":(i%5===0?"#0E9FAB":"#0B1A33"); vx.fillRect(i*(bw+gap),(H-h)/2,bw,h);}
+}
+function vizLoop(){
+  if(audio.paused){drawBars(null); return;}
+  var arr=[]; if(an){an.getByteFrequencyData(data); for(var i=0;i<48;i++){arr.push((data[Math.min(data.length-1,Math.floor(i*data.length/48*0.8))]||0)/255);} }
+  else { var tt=performance.now()/300; for(var j=0;j<48;j++) arr.push(.25+.25*Math.abs(Math.sin(tt+j*.4))); }
+  drawBars(arr); requestAnimationFrame(vizLoop);
+}
+drawBars(null);
+
+/* ---------- press tabs + copy ---------- */
+var tabs=document.querySelectorAll('.tabs [role="tab"]');
+tabs.forEach(function(tb){tb.addEventListener("click",function(){tabs.forEach(function(x){var on=x===tb; x.setAttribute("aria-selected",String(on)); $(x.getAttribute("aria-controls")).hidden=!on;});});});
+document.querySelectorAll(".copy-btn").forEach(function(btn){btn.addEventListener("click",function(){
+  var txt=Array.prototype.map.call(btn.closest(".bio").querySelectorAll(".v p"),function(p){return p.textContent.trim();}).join("\n\n");
+  function done(ok){btn.textContent=ok?t("copied"):t("copyfail"); if(!ok){var r=document.createRange(); r.selectNodeContents(btn.closest(".bio").querySelector(".v")); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);} setTimeout(function(){btn.textContent=t("copy");},1800);}
+  try{navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}catch(e){done(false);}
+});});
+
+/* ---------- init language ---------- */
+var start="en"; try{start=localStorage.getItem("ki-lang")||"en";}catch(e){}
+applyLang(start);
+})();
+</script>
+
+</html>
