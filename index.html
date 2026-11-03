@@ -80,6 +80,8 @@ html[dir="rtl"] .lang select{padding:.42rem .95rem .42rem 2rem}
 .star{position:absolute; top:-.05em; inset-inline-end:-.42em; width:.32em; color:var(--gold); animation:twinkle 4.5s ease-in-out infinite}
 @keyframes twinkle{0%,100%{transform:scale(1) rotate(0)} 50%{transform:scale(.8) rotate(45deg)}}
 .swash{display:block; width:min(100%,34rem); height:auto; margin-top:.3rem; overflow:visible}
+html[dir="rtl"] .name .w{width:max-content; margin-left:auto}
+html[dir="rtl"] .swash{margin-left:auto}
 .native{font-family:var(--display); font-size:var(--s2); color:var(--ink-soft); margin-top:.6rem}
 .native:empty{display:none}
 .lede{font-size:clamp(1.15rem,1.7vw,1.42rem); line-height:1.55; max-width:36ch; margin-top:1.6rem; color:var(--ink)}
@@ -375,7 +377,7 @@ html.js .ink.draw.in path, html.js .ink.draw.in ellipse, html.js .ink.draw.in ci
 
 <nav class="nav" id="nav" aria-label="Main">
   <div class="inner">
-    <a class="mark" href="#top"><img src="media/ginova-emblem.png" alt="">Kunter <i>Ilalan</i></a>
+    <a class="mark" href="#top"><img src="media/ginova-emblem.png" alt=""><span dir="ltr">Kunter <i>Ilalan</i></span></a>
     <div class="links">
       <a href="#founder" data-i18n="nav_founder">Founder</a>
       <a href="#studio" data-i18n="nav_studio">Studio</a>
@@ -406,7 +408,7 @@ html.js .ink.draw.in path, html.js .ink.draw.in ellipse, html.js .ink.draw.in ci
   <div class="inner">
     <div>
       <p class="eyebrow" data-i18n="hero_eyebrow">Founding Director · GiNOVA</p>
-      <h1 class="name" aria-label="Kunter Ilalan">
+      <h1 class="name" dir="ltr" aria-label="Kunter Ilalan">
         <span class="w" aria-hidden="true">Kunter</span>
         <span class="w w2" aria-hidden="true">Ilalan<svg class="star" viewBox="0 0 24 24"><use href="#spark"/></svg></span>
       </h1>
